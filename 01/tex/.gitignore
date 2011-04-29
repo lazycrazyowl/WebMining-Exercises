@@ -1,3 +1,6 @@
 *.aux
 *.pdf
+*.snm
+*.nav
+*.log
 tmp/
