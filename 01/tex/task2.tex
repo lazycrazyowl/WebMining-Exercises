@@ -1,0 +1,43 @@
+\begin{frame}[c]
+	\myframetitle{Word Count}{Sources}
+	\begin{itemize}
+		\fatitem{We count the words in two popular german books}
+		\begin{itemize}
+			\item Faust - Johann Wolfgang Goethe
+			\item Effi Briest - Theodor Fontane
+		\end{itemize}
+	\end{itemize}
+
+	\begin{small}
+	\begin{tabular}{|l|l|l|l|}
+		\hline \textbf{Briest(with Stopw.)} & \textbf{Faust(with Stopw.)} & \textbf{Briest} & \textbf{Faust} \\ 
+		\hline und 4088 & und 917 & effi 646 & mephistopheles	286  \\ 
+		\hline die 1925 & ich 701 & frau 387 & faust 271 \\ 
+		\hline ich 1714 & die 665 & innstetten 378 & the 180 \\ 
+		\hline sie 1668 & der 603 & immer 339 & project 86 \\ 
+		\hline das 1623 & nicht 425 & schon 293 & margarete	85 \\ 
+		\hline der 1509 & ein 400 	& ganz 290 & schon 84 \\ 
+		\hline nicht 1363 & das 398	& sagte 290 & wohl 75 \\ 
+		\hline ist 1002 & ist 390 & mehr 191 & and 69 \\ 
+		\hline aber 982 & sie 303 & wohl 190 & you 67 \\ 
+		\hline war 942 	& mephistopheles 286 & sei 189 & wer 56 \\
+		\hline 
+	\end{tabular} 
+	\end{small}
+\end{frame}
+
+\begin{frame}[t]
+	\myframetitle{Word Count}{Results}
+	\begin{itemize}
+		\fatitem{with stopwords}
+		\begin{itemize}
+			\item not possible to distinguish between books
+			\item stopwors are the most frequent words
+		\end{itemize}
+		\fatitem{without stopwords}
+		\begin{itemize}
+			\item names like \textit{effi} and \textit{mephistopheles} are now on top
+			\item but we have also a lot common words: \textit{wohl}, \textit{schon}, ...
+		\end{itemize}
+	\end{itemize}
+\end{frame}

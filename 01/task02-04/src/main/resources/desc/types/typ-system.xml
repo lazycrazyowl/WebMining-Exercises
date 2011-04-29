@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>webmining</name>
+    <description>Contains all type system descriptor for this task</description>
+    
+    
+    
+    <types><typeDescription>
+    <name>de.tudarmstadt.ke.webmining.types.Bigramm</name>
+    <description>A bigram annotation</description>
+    <supertypeName>uima.tcas.Annotation</supertypeName>
+    
+    </typeDescription><typeDescription>
+    <name>de.tudarmstadt.ke.webmining.types.Unigramm</name>
+    <description>A unigram annotation</description>
+    <supertypeName>uima.tcas.Annotation</supertypeName>
+    
+    </typeDescription></types>
+    </typeSystemDescription>
