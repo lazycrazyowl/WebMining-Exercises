@@ -46,6 +46,9 @@ exports.main = function(options, callback) {
 				case lang.french: 
 					widget.contentURL = data.url("./flag/fr.png");
 					break;
+				case lang.norwegian:
+					widget.contentURL = data.url("./flag/no.gif");
+					break;
 				default:
 					widget.contentURL = data.url("./keicon.png");
 					
