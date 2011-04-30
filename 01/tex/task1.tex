@@ -4,15 +4,33 @@
 \begin{itemize}
   \fatitem{Idea: Display a list of related articles orderd by the plagiarism
   probability }
-  \begin{itemize}
-  \item Download available papers from CiteSeerX with meta data.
-  \item Compare all articles via shingling to find equal phrases.
-  \item Generate a list of possible plagiarisms for each document.
-  \item Tag all entries of the bibliography from the plagiarism list
-  \item Calculate a plagiarism factor for each document
-\end{itemize} 
+  
 \fatitem{Enrich the UI of CiteSeerX with the ability to browse the plagiarism
 list for each document}
 \fatitem{That feature will stop authors from copy and pasting}
+\fatitem{Drawbacks:}
+\begin{itemize}
+	\item Increasing service costs for the owners of CiteSeerX
+	\item Because of huge computing power requirements for indexing hundred
+	thousands of documents
+\end{itemize}
 \end{itemize}
 \end{frame} 
+
+\begin{frame}[c]
+\myframetitle{Webmining Application Example}{Implementation outline}
+\begin{itemize}
+  \fatitem{Following steps are necessary to find plagiates:}
+  \begin{itemize}
+  \item Download available papers from CiteSeerX with meta data.
+  \item Compare all articles via shingling to find equal phrases.
+  \begin{itemize}
+	\item Use a multidimensional B-Tree or some kind of hashmap as storage
+  \end{itemize}
+  \item Generate a list of possible plagiarisms for each document.
+  \item Tag all entries of the bibliography from the plagiarism list
+  \item Calculate a plagiarism factor for each document
+\end{itemize}
+\end{itemize} 
+
+\end{frame}
