@@ -1,0 +1,11 @@
+# 	letter lang	syllable lang
+1 	englisch	-
+2 	englisch	-
+3	deutsch		-
+4	französisch	-
+5	deutsch		-
+6	deutsch		deutsch
+7	französisch	französisch
+8	französisch	französisch
+9	englisch	englisch
+10	deutsch		deutsch

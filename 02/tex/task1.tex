@@ -1,0 +1,120 @@
+\begin{frame}[c]
+	\myframetitle{Task 1 - Language detection}{Language Detection via letter
+	distribution}
+\begin{itemize}
+  \item The Firefox Plugin uses two detection modes
+  \begin{itemize}
+    \item Via letter frequency analysis
+    \item Via syllable frequency analysis
+  \end{itemize}
+  \item The language detection algorithm is the same for both cases
+  \item Advantages of using two detection modes:
+  \begin{itemize}
+    \item Double check the language detection results
+    \item Collect information which mode works better
+  \end{itemize}
+  \item The Source of the frequency tables is http://bit.ly/jZHf0H
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task 1 - Language detection}{Algorithm details}
+\begin{itemize}
+  \fatitem{The algorithms works with the following steps}
+  \item A chunk is either a letter or a syllable
+  \item dict contains the most important chunks of a language sorted by rank
+\begin{enumerate}
+  \item Take the text an split it to chunks(letters or syllables)
+  \item Remove all chunks which are not in the dict
+  \item Count the chunks and sort them by the count value. The result of this
+  step is further called rankedChunks
+  \item The weighted difference between the dictionary and the rankedChunks is
+  \begin{itemize}
+  \item $ \sum _{i=0}^{len(dic)} \frac{| i - rankedChunks.indexOf(dict[i]) |
+  }{log _2 (i+2)}
+  $
+  \item If dict and rankedChunks are equals the weighted difference is 0
+\end{itemize}
+\end{enumerate}
+\item repeat the steps 1-4 for all available languages. Take the language with
+the lowest rank.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+	\myframetitle{Task 1 - Language detection}{Letter frequency revisited}
+\begin{figure}[htp]
+\begin{center}
+  \includegraphics[width=1\textheight]{graphics/letters_de}
+  \caption[fig:letters_de]{The frequency of german letters used
+  for the Firefox plugin}
+  \label{figureLabel}
+\end{center}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}[c]
+	\myframetitle{Task 1 - Language detection}{Syllable frequency revisited}
+
+\begin{figure}[htp]
+\begin{center}
+  \includegraphics[width=1\textheight]{graphics/syllables_de}
+  \caption[fig:letters_de]{The frequency of common german syllables used for the Firefox plugin}
+  \label{figureLabel}
+\end{center}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}[c]
+	\myframetitle{Task 1 - Language detection}{Results of the language challenge}
+
+\begin{table}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{#} &\textbf{letter lang}&\textbf{syllable lang}\\
+\hline
+1 &englisch&-\\
+2 &englisch&-\\
+3&deutsch&-\\
+4&französisch&-\\
+5&deutsch&-\\
+6&deutsch&deutsch\\
+7&französisch&französisch\\
+8&französisch&französisch\\
+9&englisch&englisch\\
+10&deutsch&deutsch\\
+\hline
+\end{tabular}
+\caption{Detection results of the firefox plugin}
+\label{tablelabel}
+\end{table}
+
+\end{frame}
+
+\begin{frame}[c]
+	\myframetitle{Task 1 - Language detection}{Further improvement}
+	
+	\begin{itemize}
+	\fatitem{Easy:}
+	\begin{itemize}
+		\item Add more languages
+	\end{itemize}
+	
+	  \fatitem{A lot of work:}
+	  \begin{itemize}
+  	    \item The Plugin checks already p, div and span tags. It would be better
+  	  to check the text content of all tags.
+  	    \item Try to estimate the best detection result if the syllable and the
+  	letter mode returns different results
+      \end{itemize}
+      \fatitem{Most Interesting:}
+      \begin{itemize}
+  		\item Improve the weighting algorithm to reduce the amount of needed text
+  		\item Implement a learning mode to train new languages
+
+	\end{itemize}
+	\end{itemize}
+\end{frame}

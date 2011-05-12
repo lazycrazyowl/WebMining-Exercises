@@ -1,0 +1,78 @@
+\documentclass[accentcolor=tud1b,colorbacktitle,inverttitle,landscape,presentation,t]{tudbeamer}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{verbatim, hyperref,multimedia}
+\usepackage{graphicx, psfrag}			%to insert graphics
+\usepackage{setspace}
+\usepackage[active]{srcltx}
+\usepackage{color}
+\usepackage{subfigure}
+\usepackage{listings}
+\usepackage{pstricks}
+\usepackage{amssymb}
+
+\useinnertheme{default}
+\usecolortheme{orchid}
+\setbeamercovered{transparent}
+
+
+\newcommand{\keyword}[1]{\textcolor{tudaccent}{\textbf{#1}}}
+\newcommand{\myframetitle}[2]{\frametitle{#1 \\[.2cm] \small #2}}
+\newcommand{\fatitem}[1]{\item \textbf{#1}}
+\newcommand{\tab}{\hspace*{0.5cm}}
+
+
+\setcounter{tocdepth}{1} 
+
+\hypersetup{
+pdftitle={WebMining Exercise }, pdfauthor={F. Englert}
+}
+
+
+\begin{document}
+
+\title[MGA]{\large 1. Exercise}
+
+\author{Frank Englert, Jens Haase}
+\institute{KE, TU Darmstadt}
+
+\logo{\includegraphics{graphics/keico}}
+
+\date{May 2011}
+
+\begin{titleframe}
+\begin{center}
+\color{tudtextaccent} \large The first exercise\\[.5cm]
+%\includegraphics[width=0.4\textwidth]{Graphics/spg_logo_final.eps} \\
+\normalcolor \normalsize Knowlege Engineering \\
+Fachbereich Informatik \\
+Technische Universität Darmstadt\\[.5cm]
+
+\textbf{Exercise Presentation:}\\
+Frank Englert\\
+Jens Haase
+\end{center}
+
+\end{titleframe} 
+
+\begin{frame}[c]
+	\myframetitle{2. Exercise}{Overview}
+\begin{enumerate}
+  \item Language Detection via character distribution
+  \begin{itemize}
+  \item How it works
+  \item Results of the language detection challenge
+\end{itemize}
+  \item Web crawler
+  \begin{itemize}
+  \item New URLs found
+  \item URLs per Page Statistics
+  \item Classification of the pages language
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\include{task1}
+\include{task2}
+
+\end{document}
