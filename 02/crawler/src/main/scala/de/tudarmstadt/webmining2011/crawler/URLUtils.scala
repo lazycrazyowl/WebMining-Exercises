@@ -25,7 +25,11 @@ class URLWrapper(url: String) {
   /**
    * Get the absolute URL
    */
-  def absolute(context: String) = new URL(new URL(context), url).toString
+  def absolute(context: String): Option[String] = try {
+    Some(new URL(new URL(context), url).toString)
+  } catch {
+    case _ => None
+  }
 
   /**
    * Remove the reference (#) of an URL
@@ -67,5 +71,5 @@ class URLListWrapper[T <: Traversable[String]](urls: T) {
    * normalize all links
    */
   def normalizeLinks(context: String): T =
-    urls.map(_.absolute(context).withoutRef).asInstanceOf[T]
+    urls.map(_.absolute(context)).flatten.map(_.withoutRef).asInstanceOf[T]
 }
