@@ -5,7 +5,7 @@ set output "newVsFoundUrls.svg"
 plot [0:500][0:500] "newVsFoundUrls.gp" title 'BFS', "../dfs/newVsFoundUrls.gp" title 'DFS'
 
 set ylabel "# of found Links"
-set xlabel "# of pages"
+set xlabel "Rank of the page"
 set logscale x
 set logscale y
 set output "histogram.svg"
