@@ -1,980 +1,454 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="600"
-   height="480"
-   viewBox="0 0 600 480"
-   id="svg2"
-   version="1.1"
-   inkscape:version="0.48.1 r9760"
-   sodipodi:docname="syllables_de.svg">
-  <metadata
-     id="metadata448">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="817"
-     inkscape:window-height="701"
-     id="namedview446"
-     showgrid="false"
-     inkscape:zoom="2.6666667"
-     inkscape:cx="382.71542"
-     inkscape:cy="480.86651"
-     inkscape:window-x="7"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg2" />
-  <desc
-     id="desc4">Produced by GNUPLOT 4.4 patchlevel 2 </desc>
-  <defs
-     id="defs6">
-    <circle
-       id="gpDot"
-       r="0.5"
-       stroke-width="0.5" />
-    <path
-       id="gpPt0"
-       stroke-width="0.222"
-       stroke="currentColor"
-       d="M-1,0 h2 M0,-1 v2" />
-    <path
-       id="gpPt1"
-       stroke-width="0.222"
-       stroke="currentColor"
-       d="M-1,-1 L1,1 M1,-1 L-1,1" />
-    <path
-       id="gpPt2"
-       stroke-width="0.222"
-       stroke="currentColor"
-       d="M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1" />
-    <rect
-       id="gpPt3"
-       stroke-width="0.222"
-       stroke="currentColor"
-       x="-1"
-       y="-1"
-       width="2"
-       height="2" />
-    <rect
-       id="gpPt4"
-       stroke-width="0.222"
-       stroke="currentColor"
-       fill="currentColor"
-       x="-1"
-       y="-1"
-       width="2"
-       height="2" />
-    <circle
-       id="gpPt5"
-       stroke-width="0.222"
-       stroke="currentColor"
-       cx="0"
-       cy="0"
-       r="1" />
-    <use
-       xlink:href="#gpPt5"
-       id="gpPt6"
-       fill="currentColor"
-       stroke="none" />
-    <path
-       id="gpPt7"
-       stroke-width="0.222"
-       stroke="currentColor"
-       d="M0,-1.33 L-1.33,0.67 L1.33,0.67 z" />
-    <use
-       xlink:href="#gpPt7"
-       id="gpPt8"
-       fill="currentColor"
-       stroke="none" />
-    <use
-       xlink:href="#gpPt7"
-       id="gpPt9"
-       stroke="currentColor"
-       transform="rotate(180)" />
-    <use
-       xlink:href="#gpPt9"
-       id="gpPt10"
-       fill="currentColor"
-       stroke="none" />
-    <use
-       xlink:href="#gpPt3"
-       id="gpPt11"
-       stroke="currentColor"
-       transform="rotate(45)" />
-    <use
-       xlink:href="#gpPt11"
-       id="gpPt12"
-       fill="currentColor"
-       stroke="none" />
-  </defs>
-  <g
-     style="fill:none; color:white; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter"
-     id="g22" />
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path26"
-     d="m 62.2,450.3 9,0 m 503.8,0 -9,0" />
-  <g
-     id="g28"
-     style="font-size:15px;text-anchor:end;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="translate(53.9,454.8)">
-    <text
-       id="text30">0</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path32"
-     d="m 62.2,371.1 9,0 m 503.8,0 -9,0" />
-  <g
-     id="g34"
-     style="font-size:15px;text-anchor:end;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="translate(53.9,375.6)">
-    <text
-       id="text36">0.02</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path38"
-     d="m 62.2,291.8 9,0 m 503.8,0 -9,0" />
-  <g
-     id="g40"
-     style="font-size:15px;text-anchor:end;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="translate(53.9,296.3)">
-    <text
-       id="text42">0.04</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path44"
-     d="m 62.2,212.6 9,0 m 503.8,0 -9,0" />
-  <g
-     id="g46"
-     style="font-size:15px;text-anchor:end;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="translate(53.9,217.1)">
-    <text
-       id="text48">0.06</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path50"
-     d="m 62.2,133.3 9,0 m 503.8,0 -9,0" />
-  <g
-     id="g52"
-     style="font-size:15px;text-anchor:end;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="translate(53.9,137.8)">
-    <text
-       id="text54">0.08</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path56"
-     d="m 62.2,54.1 9,0 m 503.8,0 -9,0" />
-  <g
-     id="g58"
-     style="font-size:15px;text-anchor:end;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="translate(53.9,58.6)">
-    <text
-       id="text60">0.1</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path62"
-     d="m 78.7,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g64"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,83.2,458.6)">
-    <text
-       id="text66">ER</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path68"
-     d="m 95.3,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g70"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,99.8,458.6)">
-    <text
-       id="text72">CH</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path74"
-     d="m 111.8,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g76"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,116.3,458.6)">
-    <text
-       id="text78">DE</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path80"
-     d="m 128.4,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g82"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,132.9,458.6)">
-    <text
-       id="text84">EI</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path86"
-     d="m 144.9,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g88"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,149.4,458.6)">
-    <text
-       id="text90">IE</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path92"
-     d="m 161.5,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g94"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,166,458.6)">
-    <text
-       id="text96">IN</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path98"
-     d="m 178,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g100"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,182.5,458.6)">
-    <text
-       id="text102">TE</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path104"
-     d="m 194.5,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g106"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,199,458.6)">
-    <text
-       id="text108">GE</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path110"
-     d="m 211.1,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g112"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,215.6,458.6)">
-    <text
-       id="text114">UN</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path116"
-     d="m 227.6,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g118"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,232.1,458.6)">
-    <text
-       id="text120">ND</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path122"
-     d="m 244.2,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g124"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,248.7,458.6)">
-    <text
-       id="text126">IC</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path128"
-     d="m 260.7,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g130"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,265.2,458.6)">
-    <text
-       id="text132">ES</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path134"
-     d="m 277.2,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g136"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,281.7,458.6)">
-    <text
-       id="text138">BE</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path140"
-     d="m 293.8,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g142"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,298.3,458.6)">
-    <text
-       id="text144">HE</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path146"
-     d="m 310.3,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g148"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,314.8,458.6)">
-    <text
-       id="text150">ST</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path152"
-     d="m 326.9,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g154"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,331.4,458.6)">
-    <text
-       id="text156">NE</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path158"
-     d="m 343.4,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g160"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,347.9,458.6)">
-    <text
-       id="text162">AN</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path164"
-     d="m 360,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g166"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,364.5,458.6)">
-    <text
-       id="text168">RE</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path170"
-     d="m 376.5,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g172"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,381,458.6)">
-    <text
-       id="text174">SE</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path176"
-     d="m 393,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g178"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,397.5,458.6)">
-    <text
-       id="text180">DI</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path182"
-     d="m 409.6,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g184"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,414.1,458.6)">
-    <text
-       id="text186">SC</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path188"
-     d="m 426.1,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g190"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,430.6,458.6)">
-    <text
-       id="text192">AU</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path194"
-     d="m 442.7,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g196"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,447.2,458.6)">
-    <text
-       id="text198">NG</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path200"
-     d="m 459.2,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g202"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,463.7,458.6)">
-    <text
-       id="text204">SI</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path206"
-     d="m 475.7,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g208"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,480.2,458.6)">
-    <text
-       id="text210">LE</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path212"
-     d="m 492.3,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g214"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,496.8,458.6)">
-    <text
-       id="text216">DA</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path218"
-     d="m 508.8,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g220"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,513.3,458.6)">
-    <text
-       id="text222">IT</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path224"
-     d="m 525.4,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g226"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,529.9,458.6)">
-    <text
-       id="text228">HT</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path230"
-     d="m 541.9,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g232"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,546.4,458.6)">
-    <text
-       id="text234">EL</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path236"
-     d="m 558.5,450.3 0,-9 m 0,-387.2 0,9" />
-  <g
-     id="g238"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,563,458.6)">
-    <text
-       id="text240">LI</text>
-  </g>
-  <path
-     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
-     inkscape:connector-curvature="0"
-     id="path242"
-     d="m 62.2,54.1 0,396.2 512.8,0 0,-396.2 -512.8,0 z" />
-  <g
-     id="g244"
-     style="font-size:15px;text-anchor:middle;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="translate(318.6,31.6)">
-    <text
-       id="text246">Frequency over rank of common german syllables</text>
-  </g>
-  <a
-     xlink:title="Plot #1"
-     id="a248">
-    <g
-       style="fill:none; color:red; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter"
-       id="g250">
-      <g
-         transform="translate(507.9,76.6)"
-         style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end"
-         id="g252">
-        <text
-           id="text254">Frequency</text>
-      </g>
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g256">
-        <polygon
-           fill="currentColor"
-           points="516.2,76.6 558.4,76.6 558.4,67.6 516.2,67.6 "
-           id="polygon258" />
-      </g>
-      <path
-         stroke="black"
-         d="M516.2,76.6 L558.4,76.6 L558.4,67.6 L516.2,67.6 L516.2,76.6 Z "
-         id="path260" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g262">
-        <polygon
-           fill="currentColor"
-           points="75.0,450.3 82.6,450.3 82.6,284.6 75.0,284.6 "
-           id="polygon264" />
-      </g>
-      <path
-         stroke="black"
-         d="M75.0,450.3 L75.0,284.7 L82.5,284.7 L82.5,450.3 L75.0,450.3 Z "
-         id="path266" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g268">
-        <polygon
-           fill="currentColor"
-           points="91.6,450.3 99.1,450.3 99.1,308.4 91.6,308.4 "
-           id="polygon270" />
-      </g>
-      <path
-         stroke="black"
-         d="M91.6,450.3 L91.6,308.5 L99.0,308.5 L99.0,450.3 L91.6,450.3 Z "
-         id="path272" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g274">
-        <polygon
-           fill="currentColor"
-           points="108.1,450.3 115.6,450.3 115.6,349.6 108.1,349.6 "
-           id="polygon276" />
-      </g>
-      <path
-         stroke="black"
-         d="M108.1,450.3 L108.1,349.7 L115.5,349.7 L115.5,450.3 L108.1,450.3 Z "
-         id="path278" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g280">
-        <polygon
-           fill="currentColor"
-           points="124.6,450.3 132.2,450.3 132.2,353.5 124.6,353.5 "
-           id="polygon282" />
-      </g>
-      <path
-         stroke="black"
-         d="M124.6,450.3 L124.6,353.6 L132.1,353.6 L132.1,450.3 L124.6,450.3 Z "
-         id="path284" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g286">
-        <polygon
-           fill="currentColor"
-           points="141.2,450.3 148.7,450.3 148.7,365.0 141.2,365.0 "
-           id="polygon288" />
-      </g>
-      <path
-         stroke="black"
-         d="M141.2,450.3 L141.2,365.1 L148.6,365.1 L148.6,450.3 L141.2,450.3 Z "
-         id="path290" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g292">
-        <polygon
-           fill="currentColor"
-           points="157.7,450.3 165.3,450.3 165.3,365.4 157.7,365.4 "
-           id="polygon294" />
-      </g>
-      <path
-         stroke="black"
-         d="M157.7,450.3 L157.7,365.5 L165.2,365.5 L165.2,450.3 L157.7,450.3 Z "
-         id="path296" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g298">
-        <polygon
-           fill="currentColor"
-           points="174.3,450.3 181.8,450.3 181.8,367.4 174.3,367.4 "
-           id="polygon300" />
-      </g>
-      <path
-         stroke="black"
-         d="M174.3,450.3 L174.3,367.5 L181.7,367.5 L181.7,450.3 L174.3,450.3 Z "
-         id="path302" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g304">
-        <polygon
-           fill="currentColor"
-           points="190.8,450.3 198.4,450.3 198.4,375.7 190.8,375.7 "
-           id="polygon306" />
-      </g>
-      <path
-         stroke="black"
-         d="M190.8,450.3 L190.8,375.8 L198.3,375.8 L198.3,450.3 L190.8,450.3 Z "
-         id="path308" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g310">
-        <polygon
-           fill="currentColor"
-           points="207.4,450.3 214.9,450.3 214.9,383.2 207.4,383.2 "
-           id="polygon312" />
-      </g>
-      <path
-         stroke="black"
-         d="M207.4,450.3 L207.4,383.3 L214.8,383.3 L214.8,450.3 L207.4,450.3 Z "
-         id="path314" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g316">
-        <polygon
-           fill="currentColor"
-           points="223.9,450.3 231.4,450.3 231.4,383.6 223.9,383.6 "
-           id="polygon318" />
-      </g>
-      <path
-         stroke="black"
-         d="M223.9,450.3 L223.9,383.7 L231.3,383.7 L231.3,450.3 L223.9,450.3 Z "
-         id="path320" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g322">
-        <polygon
-           fill="currentColor"
-           points="240.4,450.3 248.0,450.3 248.0,391.2 240.4,391.2 "
-           id="polygon324" />
-      </g>
-      <path
-         stroke="black"
-         d="M240.4,450.3 L240.4,391.3 L247.9,391.3 L247.9,450.3 L240.4,450.3 Z "
-         id="path326" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g328">
-        <polygon
-           fill="currentColor"
-           points="257.0,450.3 264.5,450.3 264.5,395.5 257.0,395.5 "
-           id="polygon330" />
-      </g>
-      <path
-         stroke="black"
-         d="M257.0,450.3 L257.0,395.6 L264.4,395.6 L264.4,450.3 L257.0,450.3 Z "
-         id="path332" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g334">
-        <polygon
-           fill="currentColor"
-           points="273.5,450.3 281.1,450.3 281.1,395.9 273.5,395.9 "
-           id="polygon336" />
-      </g>
-      <path
-         stroke="black"
-         d="M273.5,450.3 L273.5,396.0 L281.0,396.0 L281.0,450.3 L273.5,450.3 Z "
-         id="path338" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g340">
-        <polygon
-           fill="currentColor"
-           points="290.1,450.3 297.6,450.3 297.6,398.7 290.1,398.7 "
-           id="polygon342" />
-      </g>
-      <path
-         stroke="black"
-         d="M290.1,450.3 L290.1,398.8 L297.5,398.8 L297.5,450.3 L290.1,450.3 Z "
-         id="path344" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g346">
-        <polygon
-           fill="currentColor"
-           points="306.6,450.3 314.2,450.3 314.2,399.1 306.6,399.1 "
-           id="polygon348" />
-      </g>
-      <path
-         stroke="black"
-         d="M306.6,450.3 L306.6,399.2 L314.1,399.2 L314.1,450.3 L306.6,450.3 Z "
-         id="path350" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g352">
-        <polygon
-           fill="currentColor"
-           points="323.1,450.3 330.7,450.3 330.7,399.5 323.1,399.5 "
-           id="polygon354" />
-      </g>
-      <path
-         stroke="black"
-         d="M323.1,450.3 L323.1,399.6 L330.6,399.6 L330.6,450.3 L323.1,450.3 Z "
-         id="path356" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g358">
-        <polygon
-           fill="currentColor"
-           points="339.7,450.3 347.2,450.3 347.2,400.3 339.7,400.3 "
-           id="polygon360" />
-      </g>
-      <path
-         stroke="black"
-         d="M339.7,450.3 L339.7,400.4 L347.1,400.4 L347.1,450.3 L339.7,450.3 Z "
-         id="path362" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g364">
-        <polygon
-           fill="currentColor"
-           points="356.2,450.3 363.8,450.3 363.8,406.2 356.2,406.2 "
-           id="polygon366" />
-      </g>
-      <path
-         stroke="black"
-         d="M356.2,450.3 L356.2,406.3 L363.7,406.3 L363.7,450.3 L356.2,450.3 Z "
-         id="path368" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g370">
-        <polygon
-           fill="currentColor"
-           points="372.8,450.3 380.3,450.3 380.3,406.6 372.8,406.6 "
-           id="polygon372" />
-      </g>
-      <path
-         stroke="black"
-         d="M372.8,450.3 L372.8,406.7 L380.2,406.7 L380.2,450.3 L372.8,450.3 Z "
-         id="path374" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g376">
-        <polygon
-           fill="currentColor"
-           points="389.3,450.3 396.9,450.3 396.9,408.2 389.3,408.2 "
-           id="polygon378" />
-      </g>
-      <path
-         stroke="black"
-         d="M389.3,450.3 L389.3,408.3 L396.8,408.3 L396.8,450.3 L389.3,450.3 Z "
-         id="path380" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g382">
-        <polygon
-           fill="currentColor"
-           points="405.9,450.3 413.4,450.3 413.4,411.0 405.9,411.0 "
-           id="polygon384" />
-      </g>
-      <path
-         stroke="black"
-         d="M405.9,450.3 L405.9,411.1 L413.3,411.1 L413.3,450.3 L405.9,450.3 Z "
-         id="path386" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g388">
-        <polygon
-           fill="currentColor"
-           points="422.4,450.3 429.9,450.3 429.9,413.4 422.4,413.4 "
-           id="polygon390" />
-      </g>
-      <path
-         stroke="black"
-         d="M422.4,450.3 L422.4,413.5 L429.8,413.5 L429.8,450.3 L422.4,450.3 Z "
-         id="path392" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g394">
-        <polygon
-           fill="currentColor"
-           points="438.9,450.3 446.5,450.3 446.5,414.5 438.9,414.5 "
-           id="polygon396" />
-      </g>
-      <path
-         stroke="black"
-         d="M438.9,450.3 L438.9,414.6 L446.4,414.6 L446.4,450.3 L438.9,450.3 Z "
-         id="path398" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g400">
-        <polygon
-           fill="currentColor"
-           points="455.5,450.3 463.0,450.3 463.0,414.9 455.5,414.9 "
-           id="polygon402" />
-      </g>
-      <path
-         stroke="black"
-         d="M455.5,450.3 L455.5,415.0 L462.9,415.0 L462.9,450.3 L455.5,450.3 Z "
-         id="path404" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g406">
-        <polygon
-           fill="currentColor"
-           points="472.0,450.3 479.6,450.3 479.6,416.5 472.0,416.5 "
-           id="polygon408" />
-      </g>
-      <path
-         stroke="black"
-         d="M472.0,450.3 L472.0,416.6 L479.5,416.6 L479.5,450.3 L472.0,450.3 Z "
-         id="path410" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g412">
-        <polygon
-           fill="currentColor"
-           points="488.6,450.3 496.1,450.3 496.1,417.7 488.6,417.7 "
-           id="polygon414" />
-      </g>
-      <path
-         stroke="black"
-         d="M488.6,450.3 L488.6,417.8 L496.0,417.8 L496.0,450.3 L488.6,450.3 Z "
-         id="path416" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g418">
-        <polygon
-           fill="currentColor"
-           points="505.1,450.3 512.7,450.3 512.7,418.5 505.1,418.5 "
-           id="polygon420" />
-      </g>
-      <path
-         stroke="black"
-         d="M505.1,450.3 L505.1,418.6 L512.6,418.6 L512.6,450.3 L505.1,450.3 Z "
-         id="path422" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g424">
-        <polygon
-           fill="currentColor"
-           points="521.7,450.3 529.2,450.3 529.2,418.9 521.7,418.9 "
-           id="polygon426" />
-      </g>
-      <path
-         stroke="black"
-         d="M521.7,450.3 L521.7,419.0 L529.1,419.0 L529.1,450.3 L521.7,450.3 Z "
-         id="path428" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g430">
-        <polygon
-           fill="currentColor"
-           points="538.2,450.3 545.7,450.3 545.7,420.1 538.2,420.1 "
-           id="polygon432" />
-      </g>
-      <path
-         stroke="black"
-         d="M538.2,450.3 L538.2,420.2 L545.6,420.2 L545.6,450.3 L538.2,450.3 Z "
-         id="path434" />
-      <g
-         style="stroke:none; shape-rendering:crispEdges"
-         id="g436">
-        <polygon
-           fill="currentColor"
-           points="554.7,450.3 562.3,450.3 562.3,420.5 554.7,420.5 "
-           id="polygon438" />
-      </g>
-      <path
-         stroke="black"
-         d="M554.7,450.3 L554.7,420.6 L562.2,420.6 L562.2,450.3 L554.7,450.3 Z "
-         id="path440" />
-    </g>
-  </a>
-  <g
-     style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter"
-     id="g442">
-    <path
-       d="M62.2,54.1 L62.2,450.3 L575.0,450.3 L575.0,54.1 L62.2,54.1 Z "
-       id="path444" />
-  </g>
-  <g
-     id="g64-3"
-     style="font-size:15px;text-anchor:start;color:#000000;fill:#000000;stroke:none;font-family:Arial"
-     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,65.477544,458.64976)">
-    <text
-       id="text66-8">EN</text>
-  </g>
+<?xml version="1.0" encoding="utf-8"  standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="600" height="480" viewBox="0 0 600 480"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<desc>Produced by GNUPLOT 4.4 patchlevel 2 </desc>
+
+<defs>
+
+	<circle id='gpDot' r='0.5' stroke-width='0.5'/>
+	<path id='gpPt0' stroke-width='0.222' stroke='currentColor' d='M-1,0 h2 M0,-1 v2'/>
+	<path id='gpPt1' stroke-width='0.222' stroke='currentColor' d='M-1,-1 L1,1 M1,-1 L-1,1'/>
+	<path id='gpPt2' stroke-width='0.222' stroke='currentColor' d='M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1'/>
+	<rect id='gpPt3' stroke-width='0.222' stroke='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<rect id='gpPt4' stroke-width='0.222' stroke='currentColor' fill='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<circle id='gpPt5' stroke-width='0.222' stroke='currentColor' cx='0' cy='0' r='1'/>
+	<use xlink:href='#gpPt5' id='gpPt6' fill='currentColor' stroke='none'/>
+	<path id='gpPt7' stroke-width='0.222' stroke='currentColor' d='M0,-1.33 L-1.33,0.67 L1.33,0.67 z'/>
+	<use xlink:href='#gpPt7' id='gpPt8' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt7' id='gpPt9' stroke='currentColor' transform='rotate(180)'/>
+	<use xlink:href='#gpPt9' id='gpPt10' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt3' id='gpPt11' stroke='currentColor' transform='rotate(45)'/>
+	<use xlink:href='#gpPt11' id='gpPt12' fill='currentColor' stroke='none'/>
+</defs>
+<g style="fill:none; color:white; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M62.2,450.3 L71.2,450.3 M575.0,450.3 L566.0,450.3 '></path>
+	<g transform="translate(53.9,454.8)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text> 0</text>
+	</g>
+	<path  d='M62.2,351.2 L71.2,351.2 M575.0,351.2 L566.0,351.2 '></path>
+	<g transform="translate(53.9,355.7)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text> 0.05</text>
+	</g>
+	<path  d='M62.2,252.2 L71.2,252.2 M575.0,252.2 L566.0,252.2 '></path>
+	<g transform="translate(53.9,256.7)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text> 0.1</text>
+	</g>
+	<path  d='M62.2,153.1 L71.2,153.1 M575.0,153.1 L566.0,153.1 '></path>
+	<g transform="translate(53.9,157.6)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text> 0.15</text>
+	</g>
+	<path  d='M62.2,54.1 L71.2,54.1 M575.0,54.1 L566.0,54.1 '></path>
+	<g transform="translate(53.9,58.6)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text> 0.2</text>
+	</g>
+	<path  d='M78.2,450.3 L78.2,441.3 M78.2,54.1 L78.2,63.1 '></path>
+	<g transform="translate(82.7,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>EN</text>
+	</g>
+	<path  d='M94.3,450.3 L94.3,441.3 M94.3,54.1 L94.3,63.1 '></path>
+	<g transform="translate(98.8,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>ER</text>
+	</g>
+	<path  d='M110.3,450.3 L110.3,441.3 M110.3,54.1 L110.3,63.1 '></path>
+	<g transform="translate(114.8,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>CH</text>
+	</g>
+	<path  d='M126.3,450.3 L126.3,441.3 M126.3,54.1 L126.3,63.1 '></path>
+	<g transform="translate(130.8,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>DE</text>
+	</g>
+	<path  d='M142.3,450.3 L142.3,441.3 M142.3,54.1 L142.3,63.1 '></path>
+	<g transform="translate(146.8,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>EI</text>
+	</g>
+	<path  d='M158.4,450.3 L158.4,441.3 M158.4,54.1 L158.4,63.1 '></path>
+	<g transform="translate(162.9,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>IE</text>
+	</g>
+	<path  d='M174.4,450.3 L174.4,441.3 M174.4,54.1 L174.4,63.1 '></path>
+	<g transform="translate(178.9,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>IN</text>
+	</g>
+	<path  d='M190.4,450.3 L190.4,441.3 M190.4,54.1 L190.4,63.1 '></path>
+	<g transform="translate(194.9,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>TE</text>
+	</g>
+	<path  d='M206.4,450.3 L206.4,441.3 M206.4,54.1 L206.4,63.1 '></path>
+	<g transform="translate(210.9,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>GE</text>
+	</g>
+	<path  d='M222.5,450.3 L222.5,441.3 M222.5,54.1 L222.5,63.1 '></path>
+	<g transform="translate(227.0,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>UN</text>
+	</g>
+	<path  d='M238.5,450.3 L238.5,441.3 M238.5,54.1 L238.5,63.1 '></path>
+	<g transform="translate(243.0,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>ND</text>
+	</g>
+	<path  d='M254.5,450.3 L254.5,441.3 M254.5,54.1 L254.5,63.1 '></path>
+	<g transform="translate(259.0,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>IC</text>
+	</g>
+	<path  d='M270.5,450.3 L270.5,441.3 M270.5,54.1 L270.5,63.1 '></path>
+	<g transform="translate(275.0,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>ES</text>
+	</g>
+	<path  d='M286.6,450.3 L286.6,441.3 M286.6,54.1 L286.6,63.1 '></path>
+	<g transform="translate(291.1,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>BE</text>
+	</g>
+	<path  d='M302.6,450.3 L302.6,441.3 M302.6,54.1 L302.6,63.1 '></path>
+	<g transform="translate(307.1,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>HE</text>
+	</g>
+	<path  d='M318.6,450.3 L318.6,441.3 M318.6,54.1 L318.6,63.1 '></path>
+	<g transform="translate(323.1,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>ST</text>
+	</g>
+	<path  d='M334.6,450.3 L334.6,441.3 M334.6,54.1 L334.6,63.1 '></path>
+	<g transform="translate(339.1,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>NE</text>
+	</g>
+	<path  d='M350.7,450.3 L350.7,441.3 M350.7,54.1 L350.7,63.1 '></path>
+	<g transform="translate(355.2,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>AN</text>
+	</g>
+	<path  d='M366.7,450.3 L366.7,441.3 M366.7,54.1 L366.7,63.1 '></path>
+	<g transform="translate(371.2,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>RE</text>
+	</g>
+	<path  d='M382.7,450.3 L382.7,441.3 M382.7,54.1 L382.7,63.1 '></path>
+	<g transform="translate(387.2,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>SE</text>
+	</g>
+	<path  d='M398.7,450.3 L398.7,441.3 M398.7,54.1 L398.7,63.1 '></path>
+	<g transform="translate(403.2,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>DI</text>
+	</g>
+	<path  d='M414.8,450.3 L414.8,441.3 M414.8,54.1 L414.8,63.1 '></path>
+	<g transform="translate(419.3,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>SC</text>
+	</g>
+	<path  d='M430.8,450.3 L430.8,441.3 M430.8,54.1 L430.8,63.1 '></path>
+	<g transform="translate(435.3,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>AU</text>
+	</g>
+	<path  d='M446.8,450.3 L446.8,441.3 M446.8,54.1 L446.8,63.1 '></path>
+	<g transform="translate(451.3,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>NG</text>
+	</g>
+	<path  d='M462.8,450.3 L462.8,441.3 M462.8,54.1 L462.8,63.1 '></path>
+	<g transform="translate(467.3,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>SI</text>
+	</g>
+	<path  d='M478.9,450.3 L478.9,441.3 M478.9,54.1 L478.9,63.1 '></path>
+	<g transform="translate(483.4,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>LE</text>
+	</g>
+	<path  d='M494.9,450.3 L494.9,441.3 M494.9,54.1 L494.9,63.1 '></path>
+	<g transform="translate(499.4,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>DA</text>
+	</g>
+	<path  d='M510.9,450.3 L510.9,441.3 M510.9,54.1 L510.9,63.1 '></path>
+	<g transform="translate(515.4,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>IT</text>
+	</g>
+	<path  d='M526.9,450.3 L526.9,441.3 M526.9,54.1 L526.9,63.1 '></path>
+	<g transform="translate(531.4,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>HT</text>
+	</g>
+	<path  d='M543.0,450.3 L543.0,441.3 M543.0,54.1 L543.0,63.1 '></path>
+	<g transform="translate(547.5,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>EL</text>
+	</g>
+	<path  d='M559.0,450.3 L559.0,441.3 M559.0,54.1 L559.0,63.1 '></path>
+	<g transform="translate(563.5,458.6) rotate(45)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:start">
+		<text>LI</text>
+	</g>
+	<path  d='M62.2,54.1 L62.2,450.3 L575.0,450.3 L575.0,54.1 L62.2,54.1 Z '></path>
+	<g transform="translate(318.6,31.6)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:middle">
+		<text>Frequency over rank of german letters</text>
+	</g>
+</g>
+	<a xlink:title="Plot #1">
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(507.9,76.6)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text>dict(de-DE)</text>
+	</g>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '516.2,76.6 558.4,76.6 558.4,67.6 516.2,67.6 '/>
+	</g>
+	<path stroke='black'  d='M516.2,76.6 L558.4,76.6 L558.4,67.6 L516.2,67.6 L516.2,76.6 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '73.2,450.3 78.1,450.3 78.1,353.7 73.2,353.7 '/>
+	</g>
+	<path stroke='black'  d='M73.2,450.3 L73.2,353.8 L78.0,353.8 L78.0,450.3 L73.2,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '89.2,450.3 94.1,450.3 94.1,367.4 89.2,367.4 '/>
+	</g>
+	<path stroke='black'  d='M89.2,450.3 L89.2,367.5 L94.0,367.5 L94.0,450.3 L89.2,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '105.2,450.3 110.1,450.3 110.1,379.3 105.2,379.3 '/>
+	</g>
+	<path stroke='black'  d='M105.2,450.3 L105.2,379.4 L110.0,379.4 L110.0,450.3 L105.2,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '121.2,450.3 126.1,450.3 126.1,399.9 121.2,399.9 '/>
+	</g>
+	<path stroke='black'  d='M121.2,450.3 L121.2,400.0 L126.0,400.0 L126.0,450.3 L121.2,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '137.3,450.3 142.2,450.3 142.2,401.9 137.3,401.9 '/>
+	</g>
+	<path stroke='black'  d='M137.3,450.3 L137.3,402.0 L142.1,402.0 L142.1,450.3 L137.3,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '153.3,450.3 158.2,450.3 158.2,407.6 153.3,407.6 '/>
+	</g>
+	<path stroke='black'  d='M153.3,450.3 L153.3,407.7 L158.1,407.7 L158.1,450.3 L153.3,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '169.3,450.3 174.2,450.3 174.2,407.8 169.3,407.8 '/>
+	</g>
+	<path stroke='black'  d='M169.3,450.3 L169.3,407.9 L174.1,407.9 L174.1,450.3 L169.3,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '185.3,450.3 190.2,450.3 190.2,408.8 185.3,408.8 '/>
+	</g>
+	<path stroke='black'  d='M185.3,450.3 L185.3,408.9 L190.1,408.9 L190.1,450.3 L185.3,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '201.4,450.3 206.3,450.3 206.3,413.0 201.4,413.0 '/>
+	</g>
+	<path stroke='black'  d='M201.4,450.3 L201.4,413.1 L206.2,413.1 L206.2,450.3 L201.4,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '217.4,450.3 222.3,450.3 222.3,416.7 217.4,416.7 '/>
+	</g>
+	<path stroke='black'  d='M217.4,450.3 L217.4,416.8 L222.2,416.8 L222.2,450.3 L217.4,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '233.4,450.3 238.3,450.3 238.3,416.9 233.4,416.9 '/>
+	</g>
+	<path stroke='black'  d='M233.4,450.3 L233.4,417.0 L238.2,417.0 L238.2,450.3 L233.4,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '249.4,450.3 254.3,450.3 254.3,420.7 249.4,420.7 '/>
+	</g>
+	<path stroke='black'  d='M249.4,450.3 L249.4,420.8 L254.2,420.8 L254.2,450.3 L249.4,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '265.5,450.3 270.4,450.3 270.4,422.9 265.5,422.9 '/>
+	</g>
+	<path stroke='black'  d='M265.5,450.3 L265.5,423.0 L270.3,423.0 L270.3,450.3 L265.5,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '281.5,450.3 286.4,450.3 286.4,423.1 281.5,423.1 '/>
+	</g>
+	<path stroke='black'  d='M281.5,450.3 L281.5,423.2 L286.3,423.2 L286.3,450.3 L281.5,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '297.5,450.3 302.4,450.3 302.4,424.4 297.5,424.4 '/>
+	</g>
+	<path stroke='black'  d='M297.5,450.3 L297.5,424.5 L302.3,424.5 L302.3,450.3 L297.5,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '313.5,450.3 318.4,450.3 318.4,424.6 313.5,424.6 '/>
+	</g>
+	<path stroke='black'  d='M313.5,450.3 L313.5,424.7 L318.3,424.7 L318.3,450.3 L313.5,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '329.6,450.3 334.5,450.3 334.5,424.8 329.6,424.8 '/>
+	</g>
+	<path stroke='black'  d='M329.6,450.3 L329.6,424.9 L334.4,424.9 L334.4,450.3 L329.6,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '345.6,450.3 350.5,450.3 350.5,425.2 345.6,425.2 '/>
+	</g>
+	<path stroke='black'  d='M345.6,450.3 L345.6,425.3 L350.4,425.3 L350.4,450.3 L345.6,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '361.6,450.3 366.5,450.3 366.5,428.2 361.6,428.2 '/>
+	</g>
+	<path stroke='black'  d='M361.6,450.3 L361.6,428.3 L366.4,428.3 L366.4,450.3 L361.6,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '377.6,450.3 382.5,450.3 382.5,428.4 377.6,428.4 '/>
+	</g>
+	<path stroke='black'  d='M377.6,450.3 L377.6,428.5 L382.4,428.5 L382.4,450.3 L377.6,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '393.7,450.3 398.6,450.3 398.6,429.2 393.7,429.2 '/>
+	</g>
+	<path stroke='black'  d='M393.7,450.3 L393.7,429.3 L398.5,429.3 L398.5,450.3 L393.7,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '409.7,450.3 414.6,450.3 414.6,430.6 409.7,430.6 '/>
+	</g>
+	<path stroke='black'  d='M409.7,450.3 L409.7,430.7 L414.5,430.7 L414.5,450.3 L409.7,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '425.7,450.3 430.6,450.3 430.6,431.8 425.7,431.8 '/>
+	</g>
+	<path stroke='black'  d='M425.7,450.3 L425.7,431.9 L430.5,431.9 L430.5,450.3 L425.7,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '441.7,450.3 446.6,450.3 446.6,432.4 441.7,432.4 '/>
+	</g>
+	<path stroke='black'  d='M441.7,450.3 L441.7,432.5 L446.5,432.5 L446.5,450.3 L441.7,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '457.8,450.3 462.7,450.3 462.7,432.6 457.8,432.6 '/>
+	</g>
+	<path stroke='black'  d='M457.8,450.3 L457.8,432.7 L462.6,432.7 L462.6,450.3 L457.8,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '473.8,450.3 478.7,450.3 478.7,433.4 473.8,433.4 '/>
+	</g>
+	<path stroke='black'  d='M473.8,450.3 L473.8,433.5 L478.6,433.5 L478.6,450.3 L473.8,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '489.8,450.3 494.7,450.3 494.7,434.0 489.8,434.0 '/>
+	</g>
+	<path stroke='black'  d='M489.8,450.3 L489.8,434.1 L494.6,434.1 L494.6,450.3 L489.8,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '505.8,450.3 510.7,450.3 510.7,434.4 505.8,434.4 '/>
+	</g>
+	<path stroke='black'  d='M505.8,450.3 L505.8,434.5 L510.6,434.5 L510.6,450.3 L505.8,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '521.9,450.3 526.8,450.3 526.8,434.6 521.9,434.6 '/>
+	</g>
+	<path stroke='black'  d='M521.9,450.3 L521.9,434.7 L526.7,434.7 L526.7,450.3 L521.9,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '537.9,450.3 542.8,450.3 542.8,435.1 537.9,435.1 '/>
+	</g>
+	<path stroke='black'  d='M537.9,450.3 L537.9,435.2 L542.7,435.2 L542.7,450.3 L537.9,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '553.9,450.3 558.8,450.3 558.8,435.3 553.9,435.3 '/>
+	</g>
+	<path stroke='black'  d='M553.9,450.3 L553.9,435.4 L558.7,435.4 L558.7,450.3 L553.9,450.3 Z '></path>
+</g>
+	</a>
+	<a xlink:title="Plot #2">
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(507.9,94.6)" style="stroke:none; fill:black; font-family:Arial; font-size:12.00pt; text-anchor:end">
+		<text>de.wikipedia/Buchstabenhäufigkeit</text>
+	</g>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '516.2,94.6 558.4,94.6 558.4,85.6 516.2,85.6 '/>
+	</g>
+	<path stroke='black'  d='M516.2,94.6 L558.4,94.6 L558.4,85.6 L516.2,85.6 L516.2,94.6 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '78.5,450.3 83.4,450.3 83.4,252.6 78.5,252.6 '/>
+	</g>
+	<path stroke='black'  d='M78.5,450.3 L78.5,252.7 L83.3,252.7 L83.3,450.3 L78.5,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '94.5,450.3 99.4,450.3 99.4,309.7 94.5,309.7 '/>
+	</g>
+	<path stroke='black'  d='M94.5,450.3 L94.5,309.8 L99.3,309.8 L99.3,450.3 L94.5,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '110.5,450.3 115.4,450.3 115.4,302.4 110.5,302.4 '/>
+	</g>
+	<path stroke='black'  d='M110.5,450.3 L110.5,302.5 L115.3,302.5 L115.3,450.3 L110.5,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '126.6,450.3 131.5,450.3 131.5,369.8 126.6,369.8 '/>
+	</g>
+	<path stroke='black'  d='M126.6,450.3 L126.6,369.9 L131.4,369.9 L131.4,450.3 L126.6,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '142.6,450.3 147.5,450.3 147.5,309.5 142.6,309.5 '/>
+	</g>
+	<path stroke='black'  d='M142.6,450.3 L142.6,309.6 L147.4,309.6 L147.4,450.3 L142.6,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '158.6,450.3 163.5,450.3 163.5,377.6 158.6,377.6 '/>
+	</g>
+	<path stroke='black'  d='M158.6,450.3 L158.6,377.7 L163.4,377.7 L163.4,450.3 L158.6,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '174.6,450.3 179.5,450.3 179.5,373.7 174.6,373.7 '/>
+	</g>
+	<path stroke='black'  d='M174.6,450.3 L174.6,373.8 L179.4,373.8 L179.4,450.3 L174.6,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '190.7,450.3 195.6,450.3 195.6,326.8 190.7,326.8 '/>
+	</g>
+	<path stroke='black'  d='M190.7,450.3 L190.7,326.9 L195.5,326.9 L195.5,450.3 L190.7,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '206.7,450.3 211.6,450.3 211.6,391.3 206.7,391.3 '/>
+	</g>
+	<path stroke='black'  d='M206.7,450.3 L206.7,391.4 L211.5,391.4 L211.5,450.3 L206.7,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '222.7,450.3 227.6,450.3 227.6,400.8 222.7,400.8 '/>
+	</g>
+	<path stroke='black'  d='M222.7,450.3 L222.7,400.9 L227.5,400.9 L227.5,450.3 L222.7,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '238.7,450.3 243.6,450.3 243.6,404.0 238.7,404.0 '/>
+	</g>
+	<path stroke='black'  d='M238.7,450.3 L238.7,404.1 L243.5,404.1 L243.5,450.3 L238.7,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '254.8,450.3 259.7,450.3 259.7,418.7 254.8,418.7 '/>
+	</g>
+	<path stroke='black'  d='M254.8,450.3 L254.8,418.8 L259.6,418.8 L259.6,450.3 L254.8,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '270.8,450.3 275.7,450.3 275.7,406.0 270.8,406.0 '/>
+	</g>
+	<path stroke='black'  d='M270.8,450.3 L270.8,406.1 L275.6,406.1 L275.6,450.3 L270.8,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '286.8,450.3 291.7,450.3 291.7,355.9 286.8,355.9 '/>
+	</g>
+	<path stroke='black'  d='M286.8,450.3 L286.8,356.0 L291.6,356.0 L291.6,450.3 L286.8,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '302.8,450.3 307.7,450.3 307.7,378.4 302.8,378.4 '/>
+	</g>
+	<path stroke='black'  d='M302.8,450.3 L302.8,378.5 L307.6,378.5 L307.6,450.3 L302.8,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '318.9,450.3 323.8,450.3 323.8,361.0 318.9,361.0 '/>
+	</g>
+	<path stroke='black'  d='M318.9,450.3 L318.9,361.1 L323.7,361.1 L323.7,450.3 L318.9,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '334.9,450.3 339.8,450.3 339.8,418.9 334.9,418.9 '/>
+	</g>
+	<path stroke='black'  d='M334.9,450.3 L334.9,419.0 L339.7,419.0 L339.7,450.3 L334.9,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '350.9,450.3 355.8,450.3 355.8,393.5 350.9,393.5 '/>
+	</g>
+	<path stroke='black'  d='M350.9,450.3 L350.9,393.6 L355.7,393.6 L355.7,450.3 L350.9,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '366.9,450.3 371.8,450.3 371.8,417.7 366.9,417.7 '/>
+	</g>
+	<path stroke='black'  d='M366.9,450.3 L366.9,417.8 L371.7,417.8 L371.7,450.3 L366.9,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '383.0,450.3 387.9,450.3 387.9,422.8 383.0,422.8 '/>
+	</g>
+	<path stroke='black'  d='M383.0,450.3 L383.0,422.9 L387.8,422.9 L387.8,450.3 L383.0,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '399.0,450.3 403.9,450.3 403.9,410.6 399.0,410.6 '/>
+	</g>
+	<path stroke='black'  d='M399.0,450.3 L399.0,410.7 L403.8,410.7 L403.8,450.3 L399.0,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '415.0,450.3 419.9,450.3 419.9,407.4 415.0,407.4 '/>
+	</g>
+	<path stroke='black'  d='M415.0,450.3 L415.0,407.5 L419.8,407.5 L419.8,450.3 L415.0,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '431.0,450.3 435.9,450.3 435.9,428.7 431.0,428.7 '/>
+	</g>
+	<path stroke='black'  d='M431.0,450.3 L431.0,428.8 L435.8,428.8 L435.8,450.3 L431.0,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '447.1,450.3 452.0,450.3 452.0,398.9 447.1,398.9 '/>
+	</g>
+	<path stroke='black'  d='M447.1,450.3 L447.1,399.0 L451.9,399.0 L451.9,450.3 L447.1,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '463.1,450.3 468.0,450.3 468.0,421.1 463.1,421.1 '/>
+	</g>
+	<path stroke='black'  d='M463.1,450.3 L463.1,421.2 L467.9,421.2 L467.9,450.3 L463.1,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '479.1,450.3 484.0,450.3 484.0,427.5 479.1,427.5 '/>
+	</g>
+	<path stroke='black'  d='M479.1,450.3 L479.1,427.6 L483.9,427.6 L483.9,450.3 L479.1,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '495.1,450.3 500.0,450.3 500.0,432.6 495.1,432.6 '/>
+	</g>
+	<path stroke='black'  d='M495.1,450.3 L495.1,432.7 L499.9,432.7 L499.9,450.3 L495.1,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '511.2,450.3 516.1,450.3 516.1,374.7 511.2,374.7 '/>
+	</g>
+	<path stroke='black'  d='M511.2,450.3 L511.2,374.8 L516.0,374.8 L516.0,450.3 L511.2,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '527.2,450.3 532.1,450.3 532.1,438.0 527.2,438.0 '/>
+	</g>
+	<path stroke='black'  d='M527.2,450.3 L527.2,438.1 L532.0,438.1 L532.0,450.3 L527.2,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '543.2,450.3 548.1,450.3 548.1,419.4 543.2,419.4 '/>
+	</g>
+	<path stroke='black'  d='M543.2,450.3 L543.2,419.5 L548.0,419.5 L548.0,450.3 L543.2,450.3 Z '></path>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'currentColor' points = '559.2,450.3 564.1,450.3 564.1,425.0 559.2,425.0 '/>
+	</g>
+	<path stroke='black'  d='M559.2,450.3 L559.2,425.1 L564.0,425.1 L564.0,450.3 L559.2,450.3 Z '></path>
+</g>
+	</a>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path  d='M62.2,54.1 L62.2,450.3 L575.0,450.3 L575.0,54.1 L62.2,54.1 Z '></path>
+</g>
 </svg>
+

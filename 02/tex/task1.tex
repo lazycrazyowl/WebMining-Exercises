@@ -18,6 +18,85 @@
 \end{frame}
 
 \begin{frame}[c]
+	\myframetitle{Task 1 - Language detection}{Letter frequency revisited}
+\begin{figure}[htp]
+\begin{center}
+  \includegraphics[width=1\textheight]{graphics/letters_de}
+  \caption[fig:letters_de]{The letter frequency of the dict compared to the
+  frequency of an exemplary web site}
+  \label{fig:letterfreq}
+\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}[c]
+	\myframetitle{Task 1 - Language detection}{Syllable frequency revisited}
+
+\begin{figure}[htp]
+\begin{center}
+  \includegraphics[width=1\textheight]{graphics/syllables_de}
+  \caption[fig:letters_de]{2. The syllable frequency of the dict compared to the
+  frequency of an exemplary web site}
+  \label{fig:syllablefreq}
+\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task 1 - Language detection}{Ranking Results of letters and
+syllables}
+\begin{table}
+\begin{tabular}{|lllllllllll|}
+\hline
+rank&1&2&3&4&5&6&7&8&9&10\\
+\hline
+Dict&E&N&I&R&S&T&A&H&D&U\\
+Example&E&N&S&I&T&B&R&A&P&H\\
+\hline
+\end{tabular}
+\caption{Letter Ranking Results of de.wikipedia.org/Buchstabenhäufikeit vs the
+german average}
+\label{tbl:letterRank}
+\end{table}
+
+\begin{table}
+\begin{tabular}{|lllllllllll|}
+\hline
+rank&1&2&3&4&5&6&7&8&9&10\\
+\hline
+Dict&EN&ER&CH&DE&EI&IE&IN&TE&GE&UN\\
+Example&EN&CH&EI&ER&TE&BE&ST&DE&IN&IT\\
+\hline
+\end{tabular}
+\caption{Syllable Ranking Results of de.wikipedia.org/Buchstabenhäufikeit vs the
+german average}
+\label{tbl:syllableRank}
+\end{table}
+\end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task 1 - Language detection}{Results of the frequency analysis}
+\begin{itemize}
+  \item Fazit of a first analysis:
+  \begin{itemize}
+    \item Don't use the letter or syllable probabiliy itself
+    \begin{itemize}
+  		\item It might work for letters as you can see in picture \ref{fig:letterfreq}
+  		\item But the variance for the syllables is to high
+  		\item So it will fail for syllables like in picture \ref{fig:syllablefreq}
+	\end{itemize}
+    \item Only use the rank. It matches better as you can see in the slide
+    before.
+    \item But weight it. The letters with the highest probability in the dict
+    should have the highest impact on the rank.
+  \end{itemize}
+  \fatitem{Calculate the sum of the weighted rank for each language}
+  \fatitem{Then take the language with lowest weight as estimation}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[c]
 \myframetitle{Task 1 - Language detection}{Algorithm details}
 \begin{itemize}
   \fatitem{The algorithms works with the following steps}
@@ -40,33 +119,6 @@
 the lowest rank.
 \end{itemize}
 \end{frame}
-
-\begin{frame}[c]
-	\myframetitle{Task 1 - Language detection}{Letter frequency revisited}
-\begin{figure}[htp]
-\begin{center}
-  \includegraphics[width=1\textheight]{graphics/letters_de}
-  \caption[fig:letters_de]{The frequency of german letters used
-  for the Firefox plugin}
-  \label{figureLabel}
-\end{center}
-\end{figure}
-
-\end{frame}
-
-\begin{frame}[c]
-	\myframetitle{Task 1 - Language detection}{Syllable frequency revisited}
-
-\begin{figure}[htp]
-\begin{center}
-  \includegraphics[width=1\textheight]{graphics/syllables_de}
-  \caption[fig:letters_de]{The frequency of common german syllables used for the Firefox plugin}
-  \label{figureLabel}
-\end{center}
-\end{figure}
-
-\end{frame}
-
 
 \begin{frame}[c]
 	\myframetitle{Task 1 - Language detection}{Results of the language challenge}
@@ -105,8 +157,8 @@ the lowest rank.
 	
 	  \fatitem{A lot of work:}
 	  \begin{itemize}
-  	    \item The Plugin checks already p, div and span tags. It would be better
-  	  to check the text content of all tags.
+  	    \item The Plugin checks already p, div and span tags. But Ajax Pages
+  	    still doesn't work well.
   	    \item Try to estimate the best detection result if the syllable and the
   	letter mode returns different results
       \end{itemize}
