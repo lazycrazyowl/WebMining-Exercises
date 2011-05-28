@@ -59,7 +59,7 @@ public class SvmJob {
 
 		testTime = PerformanceMonitor.watch("classification");
 		try {
-			BufferedReader br = new BufferedReader(new FileReader(testData));
+			BufferedReader br = new BufferedReader(new FileReader(trainData));
 			// System.out.println(testData);
 			accuracy = SvmHelper.predictAccuracy(br, model, 1);
 

@@ -106,10 +106,8 @@
 \end{frame}
 
 \begin{frame}
-
-
-\begin{itemize}
   \myframetitle{Task 3.3}{Präzision ist nicht alles}
+\begin{itemize}
   \item Bei der Verwendung eines Klassifikationsverfahrens muss immer ein
   Tradeoff zwischen Kosten und Leistung gefunden werden.
   \fatitem{Wenn das Verfahren mit der höchste Präzision zu teuer ist, muss ein
@@ -120,5 +118,63 @@
   Stems möglicherweise linguistisch betrachtet falsch sind.
 \end{itemize}
 \end{frame}
+	
+\begin{frame}
+  \myframetitle{Task 3.4}{Vergleich verschiedener Kernel}
+  \begin{itemize}
+  \item Bei 50 Features:
+  \item Linear: 
+  \begin{itemize}
+  \item Präzision(Test) 84.60\%,
+  \item Präzision(Training)  96.76\%
+  \item Training: 640ms, Klassifikation: 112ms
+\end{itemize}
+  \item Polynomial:
+  \begin{itemize}
+  \item Präzision(Test) 78.13\%,
+  \item Präzision(Training)  78.09\%
+  \item Training: 544ms, Klassifikation:
+  96ms
+\end{itemize}
+  \item RBF: 
+  \begin{itemize}
+  \item Präzision(Test) 78.40\%,
+  \item Präzision(Training)  78.28\%
+  \item Training: 640ms,  Klassifikation: 112ms
+\end{itemize}
+     \fatitem{$\rightarrow$Bei wenigen Features trennt ein linearer Kernel am
+     besten}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+  \myframetitle{Task 3.5}{Optimierung von c, g, o.Ä}
+  \begin{itemize}
+  \item Bei 50 Features:
+  \item Linear: 
+  \begin{itemize}
+  \item Präzision(Test) 84.60\%,
+  \item Präzision(Training)  96.76\%
+  \item Training: 640ms, Klassifikation: 112ms
+\end{itemize}
+  \item Polynomial:
+  \begin{itemize}
+  \item Präzision(Test) 78.13\%,
+  \item Präzision(Training)  78.09\%
+  \item Training: 544ms, Klassifikation:
+  96ms
+\end{itemize}
+  \item RBF: 
+  \begin{itemize}
+  \item Präzision(Test) 78.40\%,
+  \item Präzision(Training)  78.28\%
+  \item Training: 640ms,  Klassifikation: 112ms
+\end{itemize}
+     \fatitem{$\rightarrow$Bei wenigen Features trennt ein linearer Kernel am
+     besten}
+\end{itemize}
+\end{frame}
+
+	
 	
 	

@@ -6,13 +6,13 @@ import java.util.List;
 
 public class Main {
 
-	public static void main1(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException {
 
 		SvmHelper.setDiscardOutputOn();
 
 		PerformanceMonitor prog = PerformanceMonitor.watch("program");
 
-		SvmJob job = SvmJob.create("token", 1600);
+		SvmJob job = SvmJob.create("token", 50);
 		job.train();
 		job.classify();
 
@@ -25,7 +25,7 @@ public class Main {
 			600, 650, 700, 800, 850, 900, 1000, 1100, 1200, 1300, 1400, 1500,
 			1600, 1800, 2000, 2400, 3200, 6400 };
 
-	public static void main(String[] args) throws IOException {
+	public static void main1(String[] args) throws IOException {
 
 		SvmHelper.setDiscardOutputOn();
 
