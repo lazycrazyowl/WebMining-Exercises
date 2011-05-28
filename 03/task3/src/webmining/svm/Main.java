@@ -1,13 +1,12 @@
 package webmining.svm;
 
+import java.io.FileWriter;
 import java.io.IOException;
-
-import libsvm.svm_parameter;
-import libsvm.svm_problem;
+import java.util.List;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException {
+	public static void main1(String[] args) throws IOException {
 
 		SvmHelper.setDiscardOutputOn();
 
@@ -15,32 +14,48 @@ public class Main {
 
 		SvmJob job = SvmJob.create("token", 1600);
 		job.train();
-		job.test();
+		job.classify();
 
 		prog.stop();
 		System.out.println(prog.toString());
 
 	}
 
-	private static void fixSvmParameter(svm_parameter param, svm_problem prob,
-			int max_index) {
-		if (param.gamma == 0 && max_index > 0)
-			param.gamma = 1.0 / max_index;
+	static int[] data = { 5, 10, 20, 50, 100, 200, 300, 400, 450, 500, 550,
+			600, 650, 700, 800, 850, 900, 1000, 1100, 1200, 1300, 1400, 1500,
+			1600, 1800, 2000, 2400, 3200, 6400 };
 
-		if (param.kernel_type == svm_parameter.PRECOMPUTED)
-			for (int i = 0; i < prob.l; i++) {
-				if (prob.x[i][0].index != 0) {
-					System.err
-							.print("Wrong kernel matrix: first column must be 0:sample_serial_number\n");
-					System.exit(1);
-				}
-				if ((int) prob.x[i][0].value <= 0
-						|| (int) prob.x[i][0].value > max_index) {
-					System.err
-							.print("Wrong input format: sample_serial_number out of range\n");
-					System.exit(1);
-				}
-			}
+	public static void main(String[] args) throws IOException {
+
+		SvmHelper.setDiscardOutputOn();
+
+		PerformanceMonitor prog = PerformanceMonitor.watch("program");
+
+		SvmClassificationSetup setup = new SvmClassificationSetup("token", data);
+
+		writeResults(setup.run());
+
+		SvmClassificationSetup setup2 = new SvmClassificationSetup("stem", data);
+		writeResults(setup2.run());
+
+		SvmClassificationSetup setup3 = new SvmClassificationSetup(
+				"tokenWOStopword", data);
+		writeResults(setup3.run());
+
+		prog.stop();
+		System.out.println(prog.toString());
+
+	}
+
+	public static void writeResults(List<SvmClassificationResult> resultList)
+			throws IOException {
+
+		FileWriter fileWriter = new FileWriter(resultList.get(0).getName());
+
+		for (SvmClassificationResult r : resultList) {
+			fileWriter.write(r.toString() + "\n");
+		}
+		fileWriter.close();
 	}
 
 }

@@ -30,6 +30,10 @@ public class PerformanceMonitor {
 				+ formatTime(stopTime - startTime);
 	}
 
+	public long getRuntime() {
+		return stopTime - startTime;
+	}
+
 	private boolean isFinished() {
 		return stopTime == -1;
 	}

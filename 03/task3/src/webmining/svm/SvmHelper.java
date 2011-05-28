@@ -17,15 +17,15 @@ public class SvmHelper {
 		param.svm_type = svm_parameter.C_SVC;
 		param.kernel_type = svm_parameter.RBF;
 		param.degree = 3;
-		param.gamma = 0; // 1/num_features
+		param.gamma = 0.5; // 1/num_features
 		param.coef0 = 0;
 		param.nu = 0.5;
 		param.cache_size = 100;
 		param.C = 1;
-		param.eps = 1e-3;
-		param.p = 0.1;
+		param.eps = 1e-8;
+		param.p = 0.01;
 		param.shrinking = 1;
-		param.probability = 0;
+		param.probability = 1;
 		param.nr_weight = 0;
 		param.weight_label = new int[0];
 		param.weight = new double[0];
@@ -91,6 +91,7 @@ public class SvmHelper {
 
 			double target = atof(st.nextToken());
 			int m = st.countTokens() / 2;
+
 			svm_node[] x = new svm_node[m];
 			for (int j = 0; j < m; j++) {
 				x[j] = new svm_node();
@@ -122,6 +123,7 @@ public class SvmHelper {
 			sumvy += v * target;
 			++total;
 		}
+
 		/*
 		 * if (svm_type == svm_parameter.EPSILON_SVR || svm_type ==
 		 * svm_parameter.NU_SVR) { System.out.print("Mean squared error = " +

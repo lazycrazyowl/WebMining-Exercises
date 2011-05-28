@@ -28,8 +28,11 @@ public class SvmJob {
 		System.out.println("Running test " + testCase + " with " + tokens
 				+ " features");
 
-		return new SvmJob("/home/frank/Desktop/train/" + testName + ".txt",
-				"/home/frank/Desktop/test/" + testName + ".txt");
+		return new SvmJob(
+				"/home/frank/Projects/TextClassification/TextClassification/bin/Debug/out/train/"
+						+ testName + ".txt",
+				"/home/frank/Projects/TextClassification/TextClassification/bin/Debug/out/test/"
+						+ testName + ".txt");
 	}
 
 	public void train() {
@@ -41,6 +44,8 @@ public class SvmJob {
 			model = svm.svm_train(problem,
 					SvmHelper.createDefaultSvmParameters());
 
+			System.out.println(model);
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -49,13 +54,14 @@ public class SvmJob {
 		System.out.println(trainTime);
 	}
 
-	public void test() {
-		testTime = PerformanceMonitor.watch("test");
+	public double classify() {
+		double accuracy = 0;
 
+		testTime = PerformanceMonitor.watch("classification");
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(testData));
-
-			double accuracy = SvmHelper.predictAccuracy(br, model, 0);
+			// System.out.println(testData);
+			accuracy = SvmHelper.predictAccuracy(br, model, 1);
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -64,5 +70,15 @@ public class SvmJob {
 
 		testTime.stop();
 		System.out.println(testTime);
+
+		return accuracy;
+	}
+
+	public PerformanceMonitor getTrainTime() {
+		return trainTime;
+	}
+
+	public PerformanceMonitor getTestTime() {
+		return testTime;
 	}
 }

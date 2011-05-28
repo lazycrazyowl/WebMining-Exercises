@@ -1,7 +1,15 @@
 \begin{frame}[c]
-	\myframetitle{Task 2 }{}
+	\myframetitle{Task 2.1 }{Textextraktion}
 \begin{itemize}
-  \item ...
+  \fatitem{ Textextraktion erfolgt durch den JSoup HTML-Parser}
+  \begin{itemize}
+  \item Html-Tags werden bis auf den Text-Content entfernt
+  \item Beispiel: <p> Webmining Übung <i>3</i> $\rightarrow$ Webmining Übung 3 
+\end{itemize}
+  \fatitem{Wortextraktion erfolgt durch die Klasse BreakIteratorTokenizer}
+  \begin{itemize}
+  \item Diese ist Teil des Apache UIMA Projekts
+  \fatitem{Zum Stemmen wird der Snowball-Stemmer verwendet}
+  \item \end{itemize}
 \end{itemize}
 \end{frame}
-

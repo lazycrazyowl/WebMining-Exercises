@@ -14,6 +14,8 @@ public class SparseFileReader {
 	public static svm_problem readProblem(String input_file_name)
 			throws IOException {
 
+		System.out.println("Reading " + input_file_name);
+
 		BufferedReader fp = new BufferedReader(new FileReader(input_file_name));
 		Vector<Double> vy = new Vector<Double>();
 		Vector<svm_node[]> vx = new Vector<svm_node[]>();
