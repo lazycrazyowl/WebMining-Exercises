@@ -1,0 +1,79 @@
+\documentclass[accentcolor=tud1b,colorbacktitle,inverttitle,landscape,presentation,t]{tudbeamer}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{verbatim, hyperref,multimedia}
+\usepackage{graphicx, psfrag}			%to insert graphics
+\usepackage{setspace}
+\usepackage[active]{srcltx}
+\usepackage{color}
+\usepackage{subfigure}
+\usepackage{listings}
+\usepackage{pstricks}
+\usepackage{amssymb}
+
+\useinnertheme{default}
+\usecolortheme{orchid}
+\setbeamercovered{transparent}
+
+
+\newcommand{\keyword}[1]{\textcolor{tudaccent}{\textbf{#1}}} 
+\newcommand{\myframetitle}[2]{\frametitle{#1 \\[.2cm] \small #2}}
+\newcommand{\fatitem}[1]{\item \textbf{#1}}
+\newcommand{\tab}{\hspace*{0.5cm}}
+
+
+\setcounter{tocdepth}{1} 
+
+\hypersetup{
+pdftitle={WebMining Exercise }, pdfauthor={F. Englert}
+}
+
+
+\begin{document}
+
+\title[MGA]{\large 3. Exercise}
+
+\author{Frank Englert, Jens Haase}
+\institute{KE, TU Darmstadt}
+
+\logo{\includegraphics{graphics/keico}}
+
+\date{May 2011}
+
+\begin{titleframe}
+\begin{center}
+\color{tudtextaccent} \large The 3rd exercise\\[.5cm]
+%\includegraphics[width=0.4\textwidth]{Graphics/spg_logo_final.eps} \\
+\normalcolor \normalsize Knowlege Engineering \\
+Fachbereich Informatik \\
+Technische Universität Darmstadt\\[.5cm]
+
+\textbf{Exercise Presentation:}\\
+Frank Englert\\
+Jens Haase
+\end{center}
+
+\end{titleframe} 
+ 
+\begin{frame}[c]
+	\myframetitle{3. Übung}{Inhaltsverzeichnis}
+\begin{enumerate}
+  \item Task 1 - Der Datensatz
+  \item Task 2 - Extraktion der Features 
+  \item Task 3 - Klassifikation der Features
+  \begin{itemize}
+  \item Erste Verwendung der libsvm
+  \item Performanz in Abhängigkeit der Features
+  \item Vergleich der Präzision bei Stemming und
+	Stopwortentfernung
+	\item Interpretation der Ergebnisse
+	\item Vergleich zwischen unterschiedlichen Kerneln
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\include{task1}
+\include{task2}
+\include{task3}
+
+\end{document}
