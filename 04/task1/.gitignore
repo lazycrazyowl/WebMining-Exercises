@@ -1,0 +1,31 @@
+src/main/resources/data/
+src/main/resources/result/
+
+target/
+lib_managed/
+src_managed/
+project/boot/
+.scala_dependencies
+*.iml
+*.ipr
+*.iws
+/.idea
+
+# Eclipse
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# CDT-specific
+.cproject
