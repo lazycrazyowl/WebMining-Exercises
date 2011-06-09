@@ -1,0 +1,12 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CompressClassifier/main.py" ctype="Workbench">
+    <Files>
+      <File FileName="CompressClassifier/main.py" Line="345" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches ctype="PinnedWatchStore" />
+</Properties>

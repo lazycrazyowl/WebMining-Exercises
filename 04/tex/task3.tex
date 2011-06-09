@@ -1,8 +1,41 @@
 \begin{frame}[c]
-	\myframetitle{Task 3}{Compress}
+	\myframetitle{Task 3 - Compress}{Anforderungen an das Kompressionsverfahren}
 \begin{itemize}
-  \item ...
- 
+  \fatitem{Klassifikation erfolgt via Dateigröße} 
+  \begin{itemize}
+    \item Ähnliche Dokumente müssen stark komprimiert werden
+    \item Unähnliche Dokumente müssen schwach komprimiert werden
+  \end{itemize}
+  \item Annahme: Blockweise Kompressionsverfahren erfüllen unsere Anforderungen
+  nicht bestmöglich.
 \end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+	\myframetitle{Task 3 - Compress}{Mögliche Kompressionsverfahren:}
+\begin{itemize}
+  \fatitem{ Mögliche Kompressionsverfahren:}
+  \begin{table}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Verfahren & Blockweise & Coding & CPU-Kosten & Kompression\\
+\hline
+BZip2 & ja & Entropie & mittel & gering \\
+GZip & nein & Entropie & gering & mittel \\
+LZMA & nein & Dictionary & hoch & hoch \\
+\hline
+\end{tabular}
+\caption{Kompressionsverfahren im Vergleich}
+\label{tbl:CompressionRatio}
+\end{table}
+\item Rechenzeit ist für die Evaluation vermutlich nebensächlich
+\item LZMA ist für die Textklassifikation vermutlich am besten geeignet
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task 3 - Compress}{Ablauf der Kompression}
+
 \end{frame}
 

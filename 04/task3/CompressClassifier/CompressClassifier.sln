@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{9344bdbb-3e7f-41fc-a0dd-8665d75ee146}") = "CompressClassifier", "CompressClassifier\CompressClassifier.mdproj", "{45016FEB-3A20-4490-B90D-5238A1A61E8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45016FEB-3A20-4490-B90D-5238A1A61E8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45016FEB-3A20-4490-B90D-5238A1A61E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45016FEB-3A20-4490-B90D-5238A1A61E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45016FEB-3A20-4490-B90D-5238A1A61E8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = CompressClassifier\CompressClassifier.mdproj
+	EndGlobalSection
+EndGlobal
