@@ -5,6 +5,7 @@ import lzma
 import time
 import datetime
 import zlib
+import copy
 import sets
 import multiprocessing
 
@@ -18,7 +19,7 @@ class Result:
         self.originSize = originSize
         
     def ratio(self):
-        return 1.0*self.compressedSize / self.originSize
+        return 1.0 * self.compressedSize / self.originSize
     
     def __repr__(self):
         return self.__str__()
@@ -29,7 +30,7 @@ class Result:
 
 class LzmaCompressor:
     def compress(self, archive):
-        return lzma.compress(open(archive, 'r').read())
+        return lzma.compress(open(archive, 'r').read(), 16)
         
     def __str__(self):
         return "LZMA"
@@ -37,8 +38,9 @@ class LzmaCompressor:
         return self.__str__()
         
 class GzipCompressor:
+    
     def compress(self, archive):
-       	return zlib.compress(open(archive, 'r').read())
+       	return zlib.compress(open(archive, 'r').read(),1)
         
     def __str__(self):
         return "GZip"
@@ -144,10 +146,21 @@ class Classificator:
 	        
     
     originSize = {}
+    uncompressedSize = {}
+    originCompressor = {}
+    flushSize = {}
     
     def addClass(self, tarFile):
         self.classes.append(tarFile)
-        self.originSize[tarFile] = len(self.compressor.compress(tarFile))
+        
+        self.uncompressedSize[tarFile] = len(open(tarFile, 'r').read())
+        
+        c = zlib.compressobj(1)
+        cstr = c.compress(open(tarFile, 'r').read())
+        self.originCompressor[tarFile] = c.copy()
+        flushsize = len(c.flush())
+        self.originSize[tarFile] = len(cstr)+ flushsize
+        self.flushSize[tarFile] = flushsize
         
         pass
         
@@ -156,20 +169,22 @@ class Classificator:
    	    t.add(fileToAppend, os.path.basename(fileToAppend))
     
     def testForClass(self, theClass, testFile):
-        archive = theClass+str(self.classificationNr)
-        shutil.copyfile(theClass, archive)
+        #archive = theClass+str(self.classificationNr)
+        #shutil.copyfile(theClass, archive)
         
-        self.appendFile(archive, testFile)
+        #self.appendFile(archive, testFile)
         
         start = datetime.datetime.now()
-        size = len(self.compressor.compress(archive))
+        compressor = self.originCompressor[theClass].copy()
+        testfileSize = len(open(testFile, 'r').read())
+        deltasize = len(compressor.compress(open(testFile, 'r').read()))
+        deltasize += len(compressor.flush()) - self.flushSize[theClass]
         tookTime = datetime.datetime.now()-start
         
         originSize = self.originSize[theClass]
         
-        os.remove(archive)
-        r= Result(os.path.basename(theClass), testFile, str(self.compressor), tookTime,size, originSize)
-        
+        #r= Result(os.path.basename(theClass), testFile, str(self.compressor), tookTime,originSize+deltasize, originSize)
+        r= Result(os.path.basename(theClass), testFile, str(self.compressor), tookTime, deltasize, testfileSize)
 #        print "\t {0} has ratio {1}({2}/{3})".format(os.path.basename(archive),r.ratio(),size,originSize)
         return r
         
@@ -313,7 +328,7 @@ class ResultMatrix:
         return outStr
 
 def runTest(testRunner):
-    classificator = Classificator(GzipCompressor(),"/home/frank/Desktop/train", testRunner.id)
+    classificator = Classificator(LzmaCompressor(),"/home/frank/Desktop/train", testRunner.id)
     matrix = ResultMatrix("Matrix Result",runner.tests.keys())
     
     table = ResultTable()
@@ -326,12 +341,12 @@ def runTest(testRunner):
             
             result = classificator.classify(test)
             sortedResult = sorted(result, key=lambda a: a.ratio())
-            
+            print sortedResult
             v = matrix.getitem(classType,sortedResult[0].testClass)
             matrix.setitem(classType,sortedResult[0].testClass, v+1)
             table.append(classType, test,result)
             
-            print "\tTest {0} of {1} real: {2} classified: {3}".format(testRunCount, testCount, classType, sortedResult[0].testClass)
+            print "\tTest {0} of {1} real: {2} classified: {3}, ratio {4}".format(testRunCount, testCount, classType, sortedResult[0].testClass, sortedResult[0].ratio())
             testRunCount += 1
     
     print "test done"
@@ -346,24 +361,17 @@ if __name__ == '__main__':
     table = ResultTable()
     matrix = ResultMatrix("Matrix", runner.tests.keys())
 
-    pool = multiprocessing.Pool(processes=2)
+    pool = multiprocessing.Pool(processes=8)
 
     for (t,m) in pool.map(runTest, runners):
         table.merge(t)
         matrix.add(m)
         
-    print table
-    print matrix
         
-    f = open('/home/frank/Desktop/gzipMatrix.txt', 'w')
+    f = open('/home/frank/Desktop/Matrix.txt', 'w')
     f.write(matrix.__repr__())
     f.flush()
     f.close()
-    
-    f2 = open('/home/frank/Desktop/gzipResult.csv', 'w')
-    f2.write(table.csv())
-    f2.flush()
-    f2.close()
     
     
             

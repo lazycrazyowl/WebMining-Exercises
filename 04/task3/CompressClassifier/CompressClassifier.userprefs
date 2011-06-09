@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
   <MonoDevelop.Ide.Workbench ActiveDocument="CompressClassifier/main.py" ctype="Workbench">
     <Files>
-      <File FileName="CompressClassifier/main.py" Line="345" Column="13" />
+      <File FileName="CompressClassifier/main.py" Line="186" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
