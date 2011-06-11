@@ -114,4 +114,109 @@ staff & 1 & 0 & 6 & 5 & 3 & 1 & 51 \\ \hline
 \end{itemize}
 \end{frame}
 
+\begin{frame}[c]
+\myframetitle{Task4}{Interpretation der Ergebnisse}
+\begin{itemize}
+  \item Die Ergebnisse sind extrem schlecht. 
+  \item Raten der größten Gruppe(other) würde deutlich bessere Ergebnisse
+  liefern.
+  \item Aber: Je höher die Kompression desto besser werden die Ergebnisse
+  \item Stellt sich die Frage: Warum sind die Ergebnisse so schlecht?
+  \begin{enumerate}
+  \item WebKB besteht aus sehr kleinen HTML-Seiten
+  \item Viele der HTML-Seiten haben den gleichen Aufbau
+  (<html><head>\ldots</body></html>)
+\end{enumerate}
+\item $\rightarrow$ Viele der Seiten ähneln sich stark.
+\item Daher ist das klassifizieren schwierig
+\end{itemize}
+\end{frame}
 
+\begin{frame}[c]
+\myframetitle{Task 4}{Verbesserung der Ergebnisse}
+\begin{itemize}
+  \item Man erhält vermutlich bessere Ergebnisse wenn man
+  \item Das HTML entfernt
+  \begin{itemize}
+  \item So vermeidet man eine ``Klassifikation nach HTML-Elementen''
+  \item Die Ähnlichkeit zwischen den Dokumenten wird verringert
+\end{itemize}
+\item Einen stärker komprimierenden Algorithmus wählt
+\begin{itemize}
+  \item Dann werden die Dateigrößenunterschiede höher
+  \item Allerdings erfordert eine stärkere Kompression mehr Rechenzeit
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task 4.4}{Interdomain-Klassifikation}
+\begin{itemize}
+  \fatitem{Auf dem WebKB-Datensatz sollen die Mini-Newsgroups-Postings
+  klassifiziert werden.}
+  \item Für die Klassen gilt folgende Zuordnung:
+  \begin{itemize}
+  \item student
+  \begin{itemize}
+  \item misc.forsale, rec.autos, 
+  rec.motorcycles, rec.sport.baseball, rec.sport.hockey
+\end{itemize}
+  \item project
+  \begin{itemize}
+  \item sci.space, sci.electronics, sci.med, sci.space
+\end{itemize}
+  \item other
+  \begin{itemize}
+  \item alt.aheism, comp.graphics, comp.os.ms-windows.misc,
+  comp.sys.ibm.pc.hardware, comp.sys.mac.hardware, comp.windows.x, soc.religion.christian, talk.politics.guns, talk.politics.mideast, talk.politics.misc
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task 4.4}{Interdomain-Klassifikation durch Compress}
+\begin{itemize}
+  \fatitem{Ergebnisse der Interdomain-Klassifikation}
+  \item Precision: Macro 34,50\%, Micro 48,68\%
+  \item Recall: Macro 31,12\%, Micro 43,30\%
+  \item Accuracy: 27,50\%
+\begin{table}[htbp]
+\begin{tabular}{|l|r|r|r|r|r|r|r|}
+\hline
+train test & \multicolumn{1}{l|}{project} & \multicolumn{1}{l|}{course} & \multicolumn{1}{l|}{other} & \multicolumn{1}{l|}{student} & \multicolumn{1}{l|}{faculty} & \multicolumn{1}{l|}{dpt} & \multicolumn{1}{l|}{staff} \\ \hline
+project & 24 & 0 & 58 & 94 & 15 & 5 & 50 \\ \hline
+course & 11 & 0 & 173 & 190 & 39 & 17 & 29 \\ \hline
+other & 141 & 3 & 471 & 460 & 177 & 55 & 568 \\ \hline
+student & 7 & 0 & 60 & 436 & 49 & 41 & 222 \\ \hline
+faculty & 12 & 0 & 89 & 232 & 123 & 9 & 91 \\ \hline
+dpt. & 3 & 0 & 4 & 26 & 0 & 50 & 5 \\ \hline
+staff & 0 & 0 & 6 & 25 & 8 & 0 & 23 \\ \hline
+\end{tabular}
+\caption{Ergebnismatrix der Interdomain-Klassifikation}
+\label{tbl:InterdomainCls}
+\end{table}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task 4.4}{Interdomain-Klassifikation}
+\begin{itemize}
+  \fatitem{Ergebnisse der Interdomain-Klassifikation}
+  \item Die Interdomain-Klassifikation wirft Schiwerigkeiten auf
+  \begin{itemize}
+  \item Zuordnung der Klassen von einer Domain zur anderen
+  \begin{itemize}
+  \item Erfolgte mehr oder weniger willkürlich durch ``Bauchgefühl''
+  \item Verfahren zur schematischen Zuordnung der Klassen von Domain A nach Domain B notwendig
+\end{itemize}
+  \item Anpassng des Datenformates der Domains
+  \begin{itemize}
+  \item In unserem Beispiel wurde Plaintext gegen HTML klassifiziert
+  \item Lösung: Das HTML aus den WebKB-Dokumenten entfernen
+\end{itemize}
+  
+\end{itemize}
+\fatitem{$\rightarrow$ Die Interdomain-Klassifizierung es eine Notlösung, wenn ein Training nicht in Frage kommt}
+  \end{itemize}
+\end{frame}
