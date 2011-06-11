@@ -1,8 +1,222 @@
 \begin{frame}[c]
-	\myframetitle{Task 4}{Evaluation}
+	\myframetitle{Task 4}{Evaluation von GZip}
 \begin{itemize}
-  \item ...
+  \fatitem{Klassifikationsmatrix für GZip(Kompressionsstufe 1)}
+ \begin{table}[htbp]
+\begin{tabular}{|l|r|r|r|r|r|r|r|}
+\hline
+train$\downarrow$ test$\rightarrow$& \multicolumn{1}{l|}{project} &
+\multicolumn{1}{l|}{course} & \multicolumn{1}{l|}{other} & \multicolumn{1}{l|}{student} &
+\multicolumn{1}{l|}{faculty} & \multicolumn{1}{l|}{dpt.} &
+\multicolumn{1}{l|}{staff} \\ \hline project & 6 & 0 & 5 & 8 & 2 & 27 & 203 \\ \hline course & 3 & 29 & 7 & 22 & 14 & 57 & 332 \\ \hline other & 45 & 71 & 106 & 85 & 67 & 256 & 1250 \\ \hline
+student & 5 & 4 & 39 & 73 & 47 & 87 & 565 \\ \hline
+faculty & 1 & 2 & 8 & 21 & 48 & 38 & 443 \\ \hline
+dpt. & 0 & 0 & 1 & 3 & 1 & 38 & 46 \\ \hline
+staff & 0 & 0 & 1 & 2 & 3 & 8 & 53 \\ \hline
+\end{tabular}
+\caption{Resultate für GZip Kompressionsstufe 1}
+\label{tbl:GzipL1}
+\end{table}
  
 \end{itemize}
 \end{frame}
 
+\begin{frame}[c]
+\myframetitle{Task4}{Evaluation von GZip}
+\begin{itemize}
+  \fatitem{Klassifikationsmatrix für GZip(Kompressionsstufe 2)}
+  \begin{table}[htbp]
+\caption{Resultate für GZip Kompressionsstufe 2}
+\begin{tabular}{|l|r|r|r|r|r|r|r|}
+\hline
+train$\downarrow$ test$\rightarrow$& \multicolumn{1}{l|}{project} & \multicolumn{1}{l|}{course} &
+\multicolumn{1}{l|}{other} & \multicolumn{1}{l|}{student} &
+\multicolumn{1}{l|}{faculty} & \multicolumn{1}{l|}{dept.} &
+\multicolumn{1}{l|}{staff} \\ \hline project & 55 & 4 & 0 & 38 & 27 & 0 & 127 \\ \hline course & 105 & 6 & 0 & 73 & 44 & 0 & 236 \\ \hline other & 356 & 64 & 0 & 308 & 180 & 0 & 972 \\ \hline
+student & 174 & 25 & 0 & 121 & 78 & 0 & 422 \\ \hline
+faculty & 115 & 15 & 0 & 77 & 65 & 0 & 289 \\ \hline
+dept. & 13 & 0 & 0 & 18 & 13 & 0 & 45 \\ \hline
+staff & 18 & 2 & 0 & 10 & 5 & 0 & 32 \\ \hline
+\end{tabular}
+\label{tbl:GzipL2}
+\end{table}
+  
+   
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task4}{Evaluation von GZip}
+\begin{itemize}
+  \fatitem{Klassifikationsmatrix für GZip(Kompressionsstufe 6)}
+  \begin{table}[htbp]
+\caption{Resultate für GZip Kompressionsstufe 6}
+\begin{tabular}{|l|r|r|r|r|r|r|r|}
+\hline
+train$\downarrow$ test$\rightarrow$& \multicolumn{1}{l|}{project} & \multicolumn{1}{l|}{course} &
+\multicolumn{1}{l|}{other} & \multicolumn{1}{l|}{student} &
+\multicolumn{1}{l|}{faculty} & \multicolumn{1}{l|}{dept.} &
+\multicolumn{1}{l|}{staff} \\ \hline project & 25 & 0 & 19 & 8 & 6 & 3 & 190 \\ \hline course & 16 & 88 & 19 & 27 & 12 & 6 & 296 \\ \hline other & 136 & 109 & 125 & 112 & 53 & 60 & 1285 \\ \hline
+student & 17 & 1 & 88 & 106 & 38 & 4 & 566 \\ \hline
+faculty & 2 & 2 & 13 & 19 & 56 & 2 & 467 \\ \hline
+dept. & 0 & 0 & 10 & 1 & 1 & 12 & 65 \\ \hline
+staff & 1 & 0 & 5 & 5 & 3 & 1 & 52 \\ \hline
+\end{tabular}
+\label{tbl:GzipL6}
+\end{table}
+  
+  
+   
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task4}{Evaluation von GZip}
+\begin{itemize}
+  \fatitem{Klassifikationsmatrix für GZip(Kompressionsstufe 9)}
+  \begin{table}[htbp]
+\caption{Resultate für GZip Kompressionsstufe 9}
+\begin{tabular}{|l|r|r|r|r|r|r|r|}
+\hline
+train$\downarrow$ test$\rightarrow$& \multicolumn{1}{l|}{project} & \multicolumn{1}{l|}{course} &
+\multicolumn{1}{l|}{other} & \multicolumn{1}{l|}{student} &
+\multicolumn{1}{l|}{faculty} & \multicolumn{1}{l|}{dept.} &
+\multicolumn{1}{l|}{staff} \\ \hline project & 28 & 0 & 35 & 10 & 2 & 4 & 172 \\ \hline course & 18 & 91 & 31 & 24 & 10 & 7 & 283 \\ \hline other & 153 & 114 & 187 & 102 & 41 & 57 & 1226 \\ \hline
+student & 22 & 1 & 126 & 108 & 37 & 5 & 521 \\ \hline
+faculty & 6 & 3 & 37 & 23 & 57 & 2 & 433 \\ \hline
+dept. & 0 & 0 & 11 & 2 & 1 & 10 & 65 \\ \hline
+staff & 1 & 0 & 6 & 5 & 3 & 1 & 51 \\ \hline
+\end{tabular}
+\label{tbl:GzipL9}
+\end{table}
+   
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task4}{Recall, Precision, Accuracy von Compress}
+\begin{itemize}
+  \fatitem{Auswertung der Klassifikationsmatrizen ergibt}
+\begin{table}[htbp]
+\begin{tabular}{|l|r|r|r|r|}
+\hline
+\textbf{Test} & \textbf{Gzip(1)} & \textbf{Gzip(2)} &
+\textbf{Gzip(6)} & \textbf{Gzip(9)} \\ \hline Accuracy & 8,54\% & 6,75\% & 11,23\% & 12,88\% \\ \hline
+\multicolumn{5}{|l|}{\textbf{Recall}}  \\ \hline micro & 18,99\% & 15,63\% &
+23,55\% & 26,10\% \\ \hline macro & 21,30\% & 14,79\% & 24,36\% & 25,27\% \\ \hline
+\multicolumn{5}{|l|}{\textbf{Precision}}  \\ \hline micro & 49,51\% & 5,27\% &
+28,19\% & 28,00\% \\ \hline macro & 45,56\% & 4,98\% & 28,38\% & 27,32\% \\ \hline
+\end{tabular}
+\caption{Auswertung der Klassifikationsresultate für Compress}
+\label{tbl:GzipAccuResults}
+\end{table}
+  
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task4}{Interpretation der Ergebnisse}
+\begin{itemize}
+  \item Die Ergebnisse sind extrem schlecht. 
+  \item Raten der größten Gruppe(other) würde deutlich bessere Ergebnisse
+  liefern.
+  \item Aber: Je höher die Kompression desto besser werden die Ergebnisse
+  \item Stellt sich die Frage: Warum sind die Ergebnisse so schlecht?
+  \begin{enumerate}
+  \item WebKB besteht aus sehr kleinen HTML-Seiten
+  \item Viele der HTML-Seiten haben den gleichen Aufbau
+  (<html><head>\ldots</body></html>)
+\end{enumerate}
+\item $\rightarrow$ Viele der Seiten ähneln sich stark.
+\item Daher ist das klassifizieren schwierig
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task 4}{Verbesserung der Ergebnisse}
+\begin{itemize}
+  \item Man erhält vermutlich bessere Ergebnisse wenn man
+  \item Das HTML entfernt
+  \begin{itemize}
+  \item So vermeidet man eine ``Klassifikation nach HTML-Elementen''
+  \item Die Ähnlichkeit zwischen den Dokumenten wird verringert
+\end{itemize}
+\item Einen stärker komprimierenden Algorithmus wählt
+\begin{itemize}
+  \item Dann werden die Dateigrößenunterschiede höher
+  \item Allerdings erfordert eine stärkere Kompression mehr Rechenzeit
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task 4.4}{Interdomain-Klassifikation}
+\begin{itemize}
+  \fatitem{Auf dem WebKB-Datensatz sollen die Mini-Newsgroups-Postings
+  klassifiziert werden.}
+  \item Für die Klassen gilt folgende Zuordnung:
+  \begin{itemize}
+  \item student
+  \begin{itemize}
+  \item misc.forsale, rec.autos, 
+  rec.motorcycles, rec.sport.baseball, rec.sport.hockey
+\end{itemize}
+  \item project
+  \begin{itemize}
+  \item sci.space, sci.electronics, sci.med, sci.space
+\end{itemize}
+  \item other
+  \begin{itemize}
+  \item alt.aheism, comp.graphics, comp.os.ms-windows.misc,
+  comp.sys.ibm.pc.hardware, comp.sys.mac.hardware, comp.windows.x, soc.religion.christian, talk.politics.guns, talk.politics.mideast, talk.politics.misc
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task 4.4}{Interdomain-Klassifikation durch Compress}
+\begin{itemize}
+  \fatitem{Ergebnisse der Interdomain-Klassifikation}
+  \item Precision: Macro 34,50\%, Micro 48,68\%
+  \item Recall: Macro 31,12\%, Micro 43,30\%
+  \item Accuracy: 27,50\%
+\begin{table}[htbp]
+\begin{tabular}{|l|r|r|r|r|r|r|r|}
+\hline
+train test & \multicolumn{1}{l|}{project} & \multicolumn{1}{l|}{course} & \multicolumn{1}{l|}{other} & \multicolumn{1}{l|}{student} & \multicolumn{1}{l|}{faculty} & \multicolumn{1}{l|}{dpt} & \multicolumn{1}{l|}{staff} \\ \hline
+project & 24 & 0 & 58 & 94 & 15 & 5 & 50 \\ \hline
+course & 11 & 0 & 173 & 190 & 39 & 17 & 29 \\ \hline
+other & 141 & 3 & 471 & 460 & 177 & 55 & 568 \\ \hline
+student & 7 & 0 & 60 & 436 & 49 & 41 & 222 \\ \hline
+faculty & 12 & 0 & 89 & 232 & 123 & 9 & 91 \\ \hline
+dpt. & 3 & 0 & 4 & 26 & 0 & 50 & 5 \\ \hline
+staff & 0 & 0 & 6 & 25 & 8 & 0 & 23 \\ \hline
+\end{tabular}
+\caption{Ergebnismatrix der Interdomain-Klassifikation}
+\label{tbl:InterdomainCls}
+\end{table}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task 4.4}{Interdomain-Klassifikation}
+\begin{itemize}
+  \fatitem{Ergebnisse der Interdomain-Klassifikation}
+  \item Die Interdomain-Klassifikation wirft Schiwerigkeiten auf
+  \begin{itemize}
+  \item Zuordnung der Klassen von einer Domain zur anderen
+  \begin{itemize}
+  \item Erfolgte mehr oder weniger willkürlich durch ``Bauchgefühl''
+  \item Verfahren zur schematischen Zuordnung der Klassen von Domain A nach Domain B notwendig
+\end{itemize}
+  \item Anpassng des Datenformates der Domains
+  \begin{itemize}
+  \item In unserem Beispiel wurde Plaintext gegen HTML klassifiziert
+  \item Lösung: Das HTML aus den WebKB-Dokumenten entfernen
+\end{itemize}
+  
+\end{itemize}
+\fatitem{$\rightarrow$ Die Interdomain-Klassifizierung es eine Notlösung, wenn ein Training nicht in Frage kommt}
+  \end{itemize}
+\end{frame}
