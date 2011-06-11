@@ -2,12 +2,15 @@
 	\myframetitle{Task 3 - Compress}{Anforderungen an das Kompressionsverfahren}
 \begin{itemize}
   \fatitem{Klassifikation erfolgt via Dateigröße} 
+  \item Das Dokument d wird zu jeder einzelnen Klasse mit Trainingsdaten
+  hinzugefügt und komprimiert.
+  \item d gehört dann zur Klasse mit der kleinsten Dateigrößenänderung durch das
+  Hinzufügen von d.
+  \item Daraus ergeben sich folgende Anforderungen an das Kompressionsverfahren:
   \begin{itemize}
     \item Ähnliche Dokumente müssen stark komprimiert werden
     \item Unähnliche Dokumente müssen schwach komprimiert werden
   \end{itemize}
-  \item Annahme: Blockweise Kompressionsverfahren erfüllen unsere Anforderungen
-  nicht bestmöglich.
 \end{itemize}
 \end{frame}
 
@@ -15,27 +18,46 @@
 	\myframetitle{Task 3 - Compress}{Mögliche Kompressionsverfahren:}
 \begin{itemize}
   \fatitem{ Mögliche Kompressionsverfahren:}
+\item Zur Evaluation der Kompressionsverfahren wurde WebKb.tar komprimiert
   \begin{table}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
 Verfahren & Blockweise & Coding & CPU-Kosten & Kompression\\
 \hline
-BZip2 & ja & Entropie & mittel & gering \\
-GZip & nein & Entropie & gering & mittel \\
-LZMA & nein & Dictionary & hoch & hoch \\
+GZip & nein & Entropie & 19s & 10MB \\
+BZip2 & ja & Entropie & 42s & 8MB \\
+LZMA & nein & Dictionary & 132s & 7,5MB \\
 \hline
 \end{tabular}
 \caption{Kompressionsverfahren im Vergleich}
 \label{tbl:CompressionRatio}
 \end{table}
-\item Rechenzeit ist für die Evaluation vermutlich nebensächlich
-\item LZMA ist für die Textklassifikation vermutlich am besten geeignet
+\item LZMA liefert vermutlich die besten Ergebnisse
+\begin{itemize}
+  \item Wegen hoher Kompression
+  \item Und der Verwendung eines Dictionaries
+\end{itemize}
+\item Aber LZMA benötigt zu viel Rechenzeit
 \end{itemize}
 
 \end{frame}
 
 \begin{frame}[c]
 \myframetitle{Task 3 - Compress}{Ablauf der Kompression}
-
+\begin{itemize}
+  \item Zur Kompression wird GZip verwendet
+  \item Es sollen die GZip-Kompressionsstufe 1, 2, 6 und 9 verglichen werden
+  \fatitem{Die Klassifikation erfolgt in folgenden Schritten}
+  \begin{enumerate}
+  \item Vorbereitung: Zusammenfassung der Trainingsdaten jeder Klasse zu
+  \keyword{class.tar}
+  \item Kompression mit gzip von \keyword{class.tar} zu \keyword{class.tar.gz}
+  \item Erzeugen von \keyword{d.class.tar.gz} durch Hinzufügen des zu
+  klassifizierenden Dokuments d zu \keyword{class.tar.gz}
+  \item Klassifikation von d duch die Formel
+  $min(len(d.class.tar.gz)-len(class.tar.gz))$
+  \item Speicherung des Klassifikiationsergebnisses in einer Ergebnismatrix
+\end{enumerate}
+\end{itemize}
 \end{frame}
 

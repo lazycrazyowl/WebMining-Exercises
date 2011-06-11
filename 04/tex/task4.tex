@@ -1,8 +1,117 @@
 \begin{frame}[c]
-	\myframetitle{Task 4}{Evaluation}
+	\myframetitle{Task 4}{Evaluation von GZip}
 \begin{itemize}
-  \item ...
+  \fatitem{Klassifikationsmatrix für GZip(Kompressionsstufe 1)}
+ \begin{table}[htbp]
+\begin{tabular}{|l|r|r|r|r|r|r|r|}
+\hline
+train$\downarrow$ test$\rightarrow$& \multicolumn{1}{l|}{project} &
+\multicolumn{1}{l|}{course} & \multicolumn{1}{l|}{other} & \multicolumn{1}{l|}{student} &
+\multicolumn{1}{l|}{faculty} & \multicolumn{1}{l|}{dpt.} &
+\multicolumn{1}{l|}{staff} \\ \hline project & 6 & 0 & 5 & 8 & 2 & 27 & 203 \\ \hline course & 3 & 29 & 7 & 22 & 14 & 57 & 332 \\ \hline other & 45 & 71 & 106 & 85 & 67 & 256 & 1250 \\ \hline
+student & 5 & 4 & 39 & 73 & 47 & 87 & 565 \\ \hline
+faculty & 1 & 2 & 8 & 21 & 48 & 38 & 443 \\ \hline
+dpt. & 0 & 0 & 1 & 3 & 1 & 38 & 46 \\ \hline
+staff & 0 & 0 & 1 & 2 & 3 & 8 & 53 \\ \hline
+\end{tabular}
+\caption{Resultate für GZip Kompressionsstufe 1}
+\label{tbl:GzipL1}
+\end{table}
  
 \end{itemize}
 \end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task4}{Evaluation von GZip}
+\begin{itemize}
+  \fatitem{Klassifikationsmatrix für GZip(Kompressionsstufe 2)}
+  \begin{table}[htbp]
+\caption{Resultate für GZip Kompressionsstufe 2}
+\begin{tabular}{|l|r|r|r|r|r|r|r|}
+\hline
+train$\downarrow$ test$\rightarrow$& \multicolumn{1}{l|}{project} & \multicolumn{1}{l|}{course} &
+\multicolumn{1}{l|}{other} & \multicolumn{1}{l|}{student} &
+\multicolumn{1}{l|}{faculty} & \multicolumn{1}{l|}{dept.} &
+\multicolumn{1}{l|}{staff} \\ \hline project & 55 & 4 & 0 & 38 & 27 & 0 & 127 \\ \hline course & 105 & 6 & 0 & 73 & 44 & 0 & 236 \\ \hline other & 356 & 64 & 0 & 308 & 180 & 0 & 972 \\ \hline
+student & 174 & 25 & 0 & 121 & 78 & 0 & 422 \\ \hline
+faculty & 115 & 15 & 0 & 77 & 65 & 0 & 289 \\ \hline
+dept. & 13 & 0 & 0 & 18 & 13 & 0 & 45 \\ \hline
+staff & 18 & 2 & 0 & 10 & 5 & 0 & 32 \\ \hline
+\end{tabular}
+\label{tbl:GzipL2}
+\end{table}
+  
+   
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task4}{Evaluation von GZip}
+\begin{itemize}
+  \fatitem{Klassifikationsmatrix für GZip(Kompressionsstufe 6)}
+  \begin{table}[htbp]
+\caption{Resultate für GZip Kompressionsstufe 6}
+\begin{tabular}{|l|r|r|r|r|r|r|r|}
+\hline
+train$\downarrow$ test$\rightarrow$& \multicolumn{1}{l|}{project} & \multicolumn{1}{l|}{course} &
+\multicolumn{1}{l|}{other} & \multicolumn{1}{l|}{student} &
+\multicolumn{1}{l|}{faculty} & \multicolumn{1}{l|}{dept.} &
+\multicolumn{1}{l|}{staff} \\ \hline project & 25 & 0 & 19 & 8 & 6 & 3 & 190 \\ \hline course & 16 & 88 & 19 & 27 & 12 & 6 & 296 \\ \hline other & 136 & 109 & 125 & 112 & 53 & 60 & 1285 \\ \hline
+student & 17 & 1 & 88 & 106 & 38 & 4 & 566 \\ \hline
+faculty & 2 & 2 & 13 & 19 & 56 & 2 & 467 \\ \hline
+dept. & 0 & 0 & 10 & 1 & 1 & 12 & 65 \\ \hline
+staff & 1 & 0 & 5 & 5 & 3 & 1 & 52 \\ \hline
+\end{tabular}
+\label{tbl:GzipL6}
+\end{table}
+  
+  
+   
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task4}{Evaluation von GZip}
+\begin{itemize}
+  \fatitem{Klassifikationsmatrix für GZip(Kompressionsstufe 9)}
+  \begin{table}[htbp]
+\caption{Resultate für GZip Kompressionsstufe 9}
+\begin{tabular}{|l|r|r|r|r|r|r|r|}
+\hline
+train$\downarrow$ test$\rightarrow$& \multicolumn{1}{l|}{project} & \multicolumn{1}{l|}{course} &
+\multicolumn{1}{l|}{other} & \multicolumn{1}{l|}{student} &
+\multicolumn{1}{l|}{faculty} & \multicolumn{1}{l|}{dept.} &
+\multicolumn{1}{l|}{staff} \\ \hline project & 28 & 0 & 35 & 10 & 2 & 4 & 172 \\ \hline course & 18 & 91 & 31 & 24 & 10 & 7 & 283 \\ \hline other & 153 & 114 & 187 & 102 & 41 & 57 & 1226 \\ \hline
+student & 22 & 1 & 126 & 108 & 37 & 5 & 521 \\ \hline
+faculty & 6 & 3 & 37 & 23 & 57 & 2 & 433 \\ \hline
+dept. & 0 & 0 & 11 & 2 & 1 & 10 & 65 \\ \hline
+staff & 1 & 0 & 6 & 5 & 3 & 1 & 51 \\ \hline
+\end{tabular}
+\label{tbl:GzipL9}
+\end{table}
+   
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+\myframetitle{Task4}{Recall, Precision, Accuracy von Compress}
+\begin{itemize}
+  \fatitem{Auswertung der Klassifikationsmatrizen ergibt}
+\begin{table}[htbp]
+\begin{tabular}{|l|r|r|r|r|}
+\hline
+\textbf{Test} & \textbf{Gzip(1)} & \textbf{Gzip(2)} &
+\textbf{Gzip(6)} & \textbf{Gzip(9)} \\ \hline Accuracy & 8,54\% & 6,75\% & 11,23\% & 12,88\% \\ \hline
+\multicolumn{5}{|l|}{\textbf{Recall}}  \\ \hline micro & 18,99\% & 15,63\% &
+23,55\% & 26,10\% \\ \hline macro & 21,30\% & 14,79\% & 24,36\% & 25,27\% \\ \hline
+\multicolumn{5}{|l|}{\textbf{Precision}}  \\ \hline micro & 49,51\% & 5,27\% &
+28,19\% & 28,00\% \\ \hline macro & 45,56\% & 4,98\% & 28,38\% & 27,32\% \\ \hline
+\end{tabular}
+\caption{Auswertung der Klassifikationsresultate für Compress}
+\label{tbl:GzipAccuResults}
+\end{table}
+  
+\end{itemize}
+\end{frame}
+
 
