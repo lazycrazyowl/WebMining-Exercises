@@ -15,21 +15,37 @@ class TokenConsumer extends JCasConsumer_ImplBase {
   @ConfigurationParameter(name = TokenConsumer.PARAM_OUTPUT_PATH, mandatory = true)
   protected var outputFile: File = null
   
-  var tokens: Set[String] = Set.empty
+  @ConfigurationParameter(name = TokenConsumer.PARAM_MAX_TOKENS, mandatory = false)
+  protected var maxTokens: Int = -1
   
-  def process(cas: JCas) = tokens ++= cas.select(classOf[TokenTF]).map(_.getToken)
+  var tokens: Map[String, Int] = Map.empty
+  
+  def process(cas: JCas) =
+    cas.select(classOf[TokenTF]).foreach { t =>
+      val count = tokens.getOrElse(t.getToken, 0) + 1
+      tokens += ((t.getToken, count))
+    }
   
   override def collectionProcessComplete = {
     var writer = new BufferedWriter(new FileWriter(outputFile))
-    tokens.foreach(t => writer.write(t + "\n"))
+    
+    val writeTokens = if (maxTokens > 0 && tokens.size > maxTokens) {
+      tokens.toList.sortBy(_._2).take(maxTokens).toMap
+    } else {
+      tokens
+    }
+    
+    writeTokens.foreach(t => writer.write(t._1 + "\n"))
     writer.close
   }
 }
 
 object TokenConsumer {
   final val PARAM_OUTPUT_PATH = "OutputPath"
+  final val PARAM_MAX_TOKENS = "maxTokens"
 
-  def apply(outputPath: String) =
+  def apply(outputPath: String, maxTokens: Int = -1) =
     AnalysisEngineFactory.createPrimitive(classOf[TokenConsumer],
-      PARAM_OUTPUT_PATH, outputPath)
+      PARAM_OUTPUT_PATH, outputPath,
+      PARAM_MAX_TOKENS, maxTokens.asInstanceOf[Object])
 }

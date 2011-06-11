@@ -1,5 +1,7 @@
 src/main/resources/data/
+src/main/resources/data_woOther/
 src/main/resources/result/
+src/main/resources/result_woOther/
 
 target/
 lib_managed/
