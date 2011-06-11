@@ -1,4 +1,100 @@
 \begin{frame}[c]
+	\myframetitle{Task4}{Evaluation von Naive Bayes}
+	\begin{itemize}
+	\fatitem{Klassifikationsmatrix für Naive Bayes Algorithm mit alles Features}	
+	
+	\begin{table}[htbp]
+		\begin{tabular}{|l|r|r|r|r|r|r|r|}
+		\hline
+		train$\downarrow$ test$\rightarrow$& project &
+		course & other & student & faculty & dpt. & staff \\ \hline
+		
+		project & 0 & 0 & 252 & 0 & 0 & 0 & 0 \\ \hline
+		course  & 0 & 0 & 465 & 0 & 0 & 0 & 0 \\ \hline
+		other   & 0 & 0 & 1880 & 0 & 1 & 0 & 0 \\ \hline
+		student & 0 & 0 & 821 & 0 & 0 & 0 & 0 \\ \hline
+		faculty & 0 & 0 & 561 & 0 & 1 & 0 & 0 \\ \hline
+		dpt.    & 0 & 0 & 91 & 0 & 0 & 0 & 0 \\ \hline
+		staff   & 0 & 0 & 68 & 0 & 0 & 0 & 0 \\ \hline
+	\end{tabular}
+	\caption{Resultate Naive Bayes}
+	\end{table}
+	
+	\item Alle Dokumente werden als \textit{other} kategorisiert => Overfitting
+	
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+	\myframetitle{Task4}{Evaluation von Naive Bayes}
+	\begin{itemize}
+	\fatitem{Klassifikationsmatrix für Naive Bayes Algorithm mit 50,000 Features}	
+	
+	\begin{table}[htbp]
+		\begin{tabular}{|l|r|r|r|r|r|r|r|}
+		\hline
+		train$\downarrow$ test$\rightarrow$& course &
+		student & project & dpt. & staff & other & faculty \\ \hline
+		
+		course  & 12 & 18 & 9 & 1 & 0 & 394 & 31 \\ \hline
+		student & 4 & 44 & 10 & 0 & 0 & 714 & 49 \\ \hline
+		project & 4 & 9 & 6 & 0 & 1 & 215 & 17 \\ \hline
+		dpt.    & 0 & 2 & 0 & 0 & 0 & 86 & 3 \\ \hline
+		staff   & 0 & 3 & 1 & 0 & 0 & 60 & 4 \\ \hline
+		other   & 9 & 91 & 20 & 3 & 3 & 1660 & 95 \\ \hline
+		faculty & 6 & 26 & 6 & 0 & 1 & 481 & 42 \\ \hline
+	\end{tabular}
+	\caption{Resultate Naive Bayes}
+	\end{table}
+	
+	\item Weniger Overfitting. Die meisten Dokumente sind aber immer noch in der Kategorie \textit{Other}
+	
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+	\myframetitle{Task4}{Recall, Precision, Accuracy von Naive Bayes}
+	\begin{itemize}
+	\fatitem{Auswertung der Klassifikationsmatrizen ergibt}
+	
+	\begin{table}[htbp]
+		\begin{tabular}{|l|r|r|r|r|}
+		\hline
+		\textbf{Test} & \textbf{NB(93.311 Feat)} & \textbf{NB(5.,000 Feat)} \\ \hline
+		Accuracy & 45,43\% & 42,61\% \\ \hline
+
+		\multicolumn{3}{|l|}{\textbf{Recall}}  \\ \hline
+		micro & 55,43\% & 38,74\% \\ \hline
+		macro & 14,34\% & 16,79\% \\ \hline
+		
+		\multicolumn{3}{|l|}{\textbf{Precision}}  \\ \hline
+		micro & 100\% & 89,36\% \\ \hline
+		macro & NaN\% & 38,11\% \\ \hline
+		\end{tabular}
+		
+		\caption{Auswertung der Klassifikationsresultate für Naive Bayes}
+	\end{table}
+  
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+	\myframetitle{Task4}{Interpretation der Ergebnisse}
+	\begin{itemize}
+	  \item Die Ergebnisse erreichen gerade mal die Baseline (raten)
+	  \item Nutzung aller Token resultiert in Overfitting
+	  \item Reduzierung der Tokens bringt aber keine Verbesserung
+	  \item Problem:
+	  \begin{enumerate}
+	    \item WebKB besteht aus vielen kleinen Texten
+	    \item Zu wenig Text um Ähnlichkeiten Festzustellen
+	    \item Datei in der selben Kategorie sind ziemlich unterschiedlich
+	    \item Kaum Worte die in mehreren Texten vorkommen
+	  \end{enumerate}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
 	\myframetitle{Task 4}{Evaluation von GZip}
 \begin{itemize}
   \fatitem{Klassifikationsmatrix für GZip(Kompressionsstufe 1)}

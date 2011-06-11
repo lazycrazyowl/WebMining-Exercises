@@ -1,8 +1,15 @@
 \begin{frame}[c]
-	\myframetitle{Task 2}{Simple Naive Bayes}
-\begin{itemize}
-  \item ...
- 
-\end{itemize}
+	\myframetitle{Task 2 - Naive Bayes}{Ablauf}
+	\begin{itemize}
+	  \item Generierung von Features mit Uima
+	  \item Tokens werden mit dem Java Break Iterator erstellt
+	  \item Jedes Wort ist ein Features
+	  \begin{itemize}
+	  	\item numerisch
+	  	\item Anzahl der Vorkommen
+	  	\item insgesamt 93311 Features
+	  \end{itemize}  
+	  \item Um Null Werte zu vermeiden wird angenommen das jeden Token mindestens einmal vorkommt (smoothing)
+	  \item Tokenwahrscheinlichkeiten werden logarithmiert und addiert anstatt multipliziert
+	\end{itemize}
 \end{frame}
-
