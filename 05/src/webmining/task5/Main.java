@@ -5,6 +5,7 @@ import webmining.task5.commands.AnnotateDocumentCommand;
 import webmining.task5.commands.AnnotateUrlCommand;
 import webmining.task5.commands.Executor;
 import webmining.task5.commands.PageRankCommand;
+import webmining.task5.commands.PrintDirectedGraphCommand;
 import webmining.task5.graph.DirectedGraph;
 import webmining.task5.graph.reader.DotFileReader;
 
@@ -25,7 +26,8 @@ public class Main {
 						"/home/frank/workspace_scala/WebMining-Exercises/05/data"),
 				new AnnotateUrlCommand(
 						"/home/frank/workspace_scala/WebMining-Exercises/05/data/graph.dot"),
-				new PageRankCommand());
+				new PageRankCommand(), new PrintDirectedGraphCommand(
+						"/home/frank/Desktop/pr_graph.dot"));
 
 		e.execute(g);
 

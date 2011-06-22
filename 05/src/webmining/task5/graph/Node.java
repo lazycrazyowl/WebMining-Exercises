@@ -62,4 +62,8 @@ public class Node {
 	public double successorCount() {
 		return successors.size();
 	}
+
+	public Set<Node> successors() {
+		return Collections.unmodifiableSet(this.successors);
+	}
 }

@@ -1,8 +1,11 @@
 package webmining.helpers;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.DataInputStream;
 import java.io.FileInputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Collection;
 import java.util.Vector;
@@ -14,6 +17,18 @@ public class File {
 			result += line + System.getProperty("line.separator");
 
 		return result;
+	}
+
+	public static void write(String path, String content) {
+		try {
+			BufferedWriter out;
+			out = new BufferedWriter(new FileWriter(path));
+			out.write(content);
+			out.flush();
+			out.close();
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
 	}
 
 	public static Collection<String> readLines(String path) {
