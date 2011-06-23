@@ -1,5 +1,9 @@
 package webmining.task5.commands;
 
+import java.util.Comparator;
+import java.util.SortedSet;
+import java.util.TreeSet;
+
 import webmining.helpers.Log;
 import webmining.task5.graph.DirectedGraph;
 import webmining.task5.graph.Node;
@@ -22,6 +26,21 @@ public class PageRankCommand implements Command {
 				pageRankChange += pageRank(g, n);
 		}
 		Log.debug("Ranking done after " + iterations + " iterations");
+
+		SortedSet<Node> nodes = new TreeSet<Node>(new Comparator<Node>() {
+			@Override
+			public int compare(Node o1, Node o2) {
+				if (o2.getPageRank() > o1.getPageRank())
+					return 1;
+				return -1;
+			}
+		});
+		nodes.addAll(g.nodes());
+
+		Log.debug("Ranking is:");
+		for (Node n : nodes)
+			Log.debug(n.toString());
+
 	}
 
 	private boolean isCalculationFinished(int iterations, double pageRankChange) {

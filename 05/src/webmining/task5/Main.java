@@ -6,6 +6,7 @@ import webmining.task5.commands.AnnotateUrlCommand;
 import webmining.task5.commands.Executor;
 import webmining.task5.commands.PageRankCommand;
 import webmining.task5.commands.PrintDirectedGraphCommand;
+import webmining.task5.commands.SearchCommand;
 import webmining.task5.graph.DirectedGraph;
 import webmining.task5.graph.reader.DotFileReader;
 
@@ -23,7 +24,8 @@ public class Main {
 		Executor e = new Executor(new AnnotateDocumentCommand("data"),
 				new AnnotateUrlCommand("data/node.dict"),
 				new PageRankCommand(), new PrintDirectedGraphCommand(
-						"pr_graph.dot"));
+						"pr_graph.dot"), new SearchCommand(new String[] {
+						"web", "mining" }, 30));
 
 		e.execute(g);
 

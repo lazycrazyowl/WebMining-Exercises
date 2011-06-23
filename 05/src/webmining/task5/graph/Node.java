@@ -1,5 +1,6 @@
 package webmining.task5.graph;
 
+import java.text.DecimalFormat;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -7,7 +8,7 @@ import java.util.Set;
 public class Node {
 	private final int id;
 	private String url;
-	private String document;
+	private Set<String> document;
 	private double pageRank;
 
 	public double getPageRank() {
@@ -18,7 +19,7 @@ public class Node {
 		this.pageRank = pageRank;
 	}
 
-	public String getDocument() {
+	public Set<String> getDocument() {
 		return document;
 	}
 
@@ -49,7 +50,7 @@ public class Node {
 		toNode.predecessors.add(this);
 	}
 
-	public void setDocument(String document) {
+	public void setDocument(Set<String> document) {
 		this.document = document;
 
 	}
@@ -65,5 +66,17 @@ public class Node {
 
 	public Set<Node> successors() {
 		return Collections.unmodifiableSet(this.successors);
+	}
+
+	public boolean find(String subQuery) {
+		return document.contains(subQuery);
+	}
+
+	@Override
+	public String toString() {
+		DecimalFormat df = new DecimalFormat("#.#####");
+		return "#" + this.getId() + "	PR(" + df.format(this.getPageRank())
+				+ "), " + this.getUrl();
+
 	}
 }
