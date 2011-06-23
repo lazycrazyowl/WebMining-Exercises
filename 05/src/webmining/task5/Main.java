@@ -15,19 +15,15 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		DotFileReader rdr = new DotFileReader(
-				"/home/frank/workspace_scala/WebMining-Exercises/05/data/graph.dot");
+		DotFileReader rdr = new DotFileReader("data/graph.dot");
 
 		DirectedGraph g = rdr.createDirectedGraph();
 		Log.debug("Read " + g.nodeCount() + " nodes to the directed graph");
 
-		Executor e = new Executor(
-				new AnnotateDocumentCommand(
-						"/home/frank/workspace_scala/WebMining-Exercises/05/data"),
-				new AnnotateUrlCommand(
-						"/home/frank/workspace_scala/WebMining-Exercises/05/data/graph.dot"),
+		Executor e = new Executor(new AnnotateDocumentCommand("data"),
+				new AnnotateUrlCommand("data/node.dict"),
 				new PageRankCommand(), new PrintDirectedGraphCommand(
-						"/home/frank/Desktop/pr_graph.dot"));
+						"pr_graph.dot"));
 
 		e.execute(g);
 
