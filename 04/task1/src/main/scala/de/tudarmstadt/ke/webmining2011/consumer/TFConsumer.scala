@@ -36,7 +36,8 @@ class TFConsumer extends JCasConsumer_ImplBase {
   def process(cas: JCas) = {
 	writer.write(cas.selectSingle(classOf[Category]).getCategory)
 	
-	val tfs: Map[String, Int] = cas.select(classOf[TokenTF]).map(tf => (tf.getToken, tf.getCount)).toMap
+	val tfs: Map[String, Int] = cas.select(classOf[TokenTF]).
+		map(tf => (tf.getToken, tf.getCount)).toMap
 
     tokens.foreach(t => {
       writer.write(" ")
