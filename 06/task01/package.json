@@ -1,0 +1,9 @@
+{
+    "name": "kewrapper", 
+    "license": "MPL 1.1/GPL 2.0/LGPL 2.1", 
+    "author": "fenglert, jhaase", 
+    "version": "0.1", 
+    "fullName": "ke LR-Wrapper", 
+    "id": "cc6d9e6d-551a-445c-b4ed-4353493af52f", 
+    "description": "Wrapper addon"
+}

@@ -1,0 +1,40 @@
+\begin{frame}[c]
+  \myframetitle{Ranking-Verfahren}{Im Vergleich}
+
+  \begin{itemize}
+  \fatitem{Alle Ranking-Verfahren eignen sich für einen Vergleich der
+  Suchergebnisse}
+  \item Das tatsächlich beste Verfahren muss Anhand der Anforderungen gewählt
+  werden
+  \item Jen nach dem, auf welche Anforderungen die Suchmaschine optimiert werden
+  soll, eignen sich die Ranking-Verfahren unterschiedlich gut.
+  \begin{itemize}
+    \item \textit{Precision} und \textit{Recall} ermöglichen ein Optimieren der
+    Suchmaschine auf False-Positive und False-Negative-Fehlerraten. Die Qualität
+    des Rankings kann nicht gemessen werden
+    \item \textit{NDCG} ermöglicht ein Optimieren der Suchmaschine falls nur
+    wenige Suchergebnisse gewünscht sind. Je höher der Rang, desto geringer ist der
+    Einfluss eines Ergebnisdokuemnts auf das Messergebniss
+    \item Die \textit{Kendall-Tau-Distanz} ermöglicht das Bestimmen der Güte
+    der Sortierung der Ebnissdokumente. Es werden dabei aber keinerlei Aussagen
+    über die Fehlerrate getroffen
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+  \myframetitle{Suchverfahren im Vergleich}{HITs vs. Page-Rank}
+  \begin{itemize}
+  \item HITs hat einen höheren Recall bei einer geringeren Precision
+  $\rightarrow$ HITs liefert mehr Ergebnisdokumente zurück.
+\item   Die \textit{normalized discountent cumulative Gain} und
+\textit{average Precision} haben ähnliche Werte. 
+  \item Allerdings ist die \textit{normalisierte Kendall-Tau-Distanz} des
+  HITs-Ergebnissets höher. Das bedeutet, PageRank sortiert die Ergebnisse
+  besser.
+  \fatitem{$\Rightarrow$ HITs liefert mehr gewünschte Ergebnisse während bei
+  Page-Rank die Sortierung der Ergebnisse besser ist}
+\end{itemize}
+
+  
+\end{frame}

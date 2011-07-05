@@ -1,0 +1,81 @@
+\documentclass[accentcolor=tud1b,colorbacktitle,inverttitle,landscape,presentation,t]{tudbeamer}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{verbatim, hyperref,multimedia}
+\usepackage{graphicx, psfrag}			%to insert graphics
+\usepackage{setspace}
+\usepackage[active]{srcltx}
+\usepackage{color}
+\usepackage{subfigure}
+\usepackage{listings}
+\usepackage{pstricks}
+\usepackage{amssymb}
+
+\useinnertheme{default}
+\usecolortheme{orchid}
+\setbeamercovered{transparent}
+
+
+\newcommand{\keyword}[1]{\textcolor{tudaccent}{\textbf{#1}}} 
+\newcommand{\myframetitle}[2]{\frametitle{#1 \\[.2cm] \small #2}}
+\newcommand{\fatitem}[1]{\item \textbf{#1}}
+\newcommand{\tab}{\hspace*{0.5cm}}
+
+
+\setcounter{tocdepth}{1} 
+
+\hypersetup{
+pdftitle={WebMining Exercise }, pdfauthor={F. Englert}
+}
+
+
+\begin{document}
+
+\title[MGA]{\large 4. Exercise}
+
+\author{Frank Englert, Jens Haase}
+\institute{KE, TU Darmstadt}
+
+\logo{\includegraphics{graphics/keico.png}}
+
+\date{Juni 2011}
+
+\begin{titleframe}
+\begin{center}
+\color{tudtextaccent} \large Die 4. Übung\\[.5cm]
+%\includegraphics[width=0.4\textwidth]{Graphics/spg_logo_final.eps} \\
+\normalcolor \normalsize Knowlege Engineering \\
+Fachbereich Informatik \\
+Technische Universität Darmstadt\\[.5cm]
+
+\textbf{Präsentation der Ergebnisse:}\\
+Frank Englert\\ 
+Jens Haase
+\end{center}
+
+\end{titleframe}  
+
+\begin{frame}[c]
+	\myframetitle{5. Übung}{Inhalt}
+\begin{itemize}
+  \fatitem{Sammeln der Daten}
+  \fatitem{Page Rank und HITS}
+  \begin{itemize}
+  \item Implementierung von Page Rank
+  \item Implementierung von HITS
+  \item Vergleich der Ranking-Verfahren
+  \item Berechnung der Kendall-Tau-Distanz
+  \item Probleme des PageRank-Verfahrens
+\end{itemize} 
+\end{itemize} 
+\end{frame}
+
+\include{task1}
+\include{task2_hits}
+\include{task2_pagerank}
+\include{task2_2}
+\include{task2_3}
+\include{task2_4}
+\include{task2_5}
+\include{task2_6}
+\end{document}
