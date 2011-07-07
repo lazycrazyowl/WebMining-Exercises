@@ -5,11 +5,11 @@ function doElementSelect() {
 	var currentNode = null;
 	$('body').mousemove(function(event) {
 	  if (jQuery(event.target) !== currentNode) {
-		if(currentNode != null) {
+		/*if(currentNode != null) {
 			currentNode.css('background', '');
 		}
 		currentNode=$(event.target);
-		currentNode.css('background', colorHighlight);
+		currentNode.css('background', colorHighlight);*/
 	  }
 	});
 
@@ -18,7 +18,7 @@ function doElementSelect() {
 		//event.shiftKey
 		if(event.which == 1 && event.ctrlKey) {
 			var node = event.target;
-			collect(node)
+			collect(node);
 			jQuery(node).css('border', '2px solid ' + colorSelected );
 		}
 	});

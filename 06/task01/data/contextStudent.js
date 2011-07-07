@@ -41,22 +41,42 @@ function collect(element) {
 function execute(model) {
 
 	//Example for marking nodes with jQuery
-	console.log("execute")
+	console.log("execute");
 	
-	for(i=0; i<model.length;i++) {
-		var nodeName = model[i];
-		console.log("start " + nodeName[0]);
-		console.log("end " + nodeName[1]);
-		//jQuery(nodeName).css('border', '2px solid ' + colorExtracted);
+	var left = model[0],
+	    right = model[1],
+	    htmlElement = document.getElementsByTagName('body')[0],
+	    text = htmlElement.innerHTML,
+	    newText = htmlElement.innerHTML,
+	    start = text.indexOf(left)+left.length,
+        end = text.indexOf(right),
+        offsetText = 0;
+        offsetNewText = 0;
+	
+	console.log(start);
+	console.log(end);
+	while (start >= 0 && end >= 0) {
+	    console.log("Found: " + text.substring(start, end));
+	    
+        newText = newText.substring(0, start+offsetNewText) + 
+            '<div style="background:#C9f">' +
+            text.substring(start, end) + 
+            '</div>' + 
+            newText.substring(end+offsetNewText, newText.length);
+	    
+	    // Next
+	    offsetNewText += '<div style="background:#C9f"></div>'.length + end + right.length;
+	    text = text.substring(end+right.length, text.length);
+	    start = text.indexOf(left)+left.length,
+        end = text.indexOf(right);
+        
+        console.log(start +" " + end + " " + text.length);
 	}
-
+	
 	//Example for marking text. Basically you need to identify your text an then
 	//mark it with a css style. Feel free to replace your text with <div
 	//style='background:#red'> TEXT </div> Or just put brackets around it.
-	var htmlElement = document.getElementsByTagName('html')[0];
-	var htmlText = htmlElement.innerHTML;
-	htmlText = htmlText.replace('body', 'body style="background:#CC99ff"');
-	htmlElement.innerHTML=htmlText;
+	htmlElement.innerHTML=newText;
 
 }
 

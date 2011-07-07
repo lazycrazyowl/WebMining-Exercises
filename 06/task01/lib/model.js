@@ -4,7 +4,7 @@
  */
 function induce(items) {
     var leftDel = items[0][0],
-        rightDel = item[0][1];
+        rightDel = items[0][1];
 
     // Find the shortest matching left delimiter suffix
     // Find the shortest matching right delimiter prefix
@@ -25,14 +25,17 @@ function induce(items) {
 	}
 	
 	// Best length should be 20
-	if (leftDel.length > 20) {
+	/*if (leftDel.length > 20) {
 	    leftDel = leftDel.substring(leftDel.length-20, leftDel.length)
 	}
 	
 	// Best length should be 20
 	if (rightDel.length > 20) {
 	    rightDel = rightDel.substring(0,20);
-	}
+	}*/
+	
+	console.log("Left Delimiter: " + leftDel);
+	console.log("Right Delimiter: " + rightDel);
 
 	//Create your model here. In my simple case the items are my model. The
 	//return type is free for you to chose. It is the same you will 
@@ -41,7 +44,7 @@ function induce(items) {
 }
 
 function commonPrefix(str1, str2) {
-    var len = Math.min(str.length, str2.length);
+    var len = Math.min(str1.length, str2.length);
     
     var common = 0;
     for (i=0; i<len; i++) {
@@ -56,7 +59,7 @@ function commonPrefix(str1, str2) {
 }
 
 function reverseStr(str) {
-    var splitext = str.split(""),
+    var splittext = str.split(""),
         rev = splittext.reverse();
         
     return rev.join("");
